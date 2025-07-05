@@ -5,7 +5,7 @@ import AboutPage from './pages/AboutPage';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/pickem'>
       <nav style={{ padding: '1rem', background: '#eee' }}>
         <Link to="/" style={{ marginRight: '1rem' }}>Home</Link>
         <Link to="/about">About</Link>
