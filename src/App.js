@@ -1,18 +1,20 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import NavBar from './components/NavBar';
+import TitleBar from './components/TitleBar';
 import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
+import PickFormPage from './pages/PickFormPage';
+import LeaderboardPage from './pages/LeaderboardPage';
 
 function App() {
   return (
     <Router basename='/pickem'>
-      <nav style={{ padding: '1rem', background: '#eee' }}>
-        <Link to="/" style={{ marginRight: '1rem' }}>Home</Link>
-        <Link to="/about">About</Link>
-      </nav>
+      <TitleBar />
+      <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
+        <Route path="/form" element={<PickFormPage />} />
+        <Route path="/leaderboard" element={<LeaderboardPage />} />
       </Routes>
     </Router>
   );
