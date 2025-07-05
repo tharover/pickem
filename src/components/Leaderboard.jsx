@@ -4,7 +4,7 @@ export default function Leaderboard() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('/pickem-hub/data/leaderboard.json')
+    fetch('/pickem/data/leaderboard.json')
       .then(res => res.json())
       .then(json => {
         // Optional: group and summarize by player
