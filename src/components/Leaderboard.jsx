@@ -2,9 +2,12 @@ import { useEffect, useState } from 'react';
 
 export default function Leaderboard() {
   const [data, setData] = useState([]);
+  
+const leaderboardUrl = `${process.env.REACT_APP_LEADERBOARD_URL}?t=${Date.now()}`;
 
   useEffect(() => {
-    fetch('https://tharover.github.io/pickem-data/leaderboard.json')
+    console.log(`Fetching leaderboard data from: ${leaderboardUrl}`);
+    fetch(leaderboardUrl)
       .then(res => res.json())
       .then(json => {
         // Optional: group and summarize by player
