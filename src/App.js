@@ -5,6 +5,9 @@ import TitleBar from './components/TitleBar';
 import HomePage from './pages/HomePage';
 import PickFormPage from './pages/PickFormPage';
 import LeaderboardPage from './pages/LeaderboardPage';
+import LoginPage from './pages/LoginPage';
+import ProtectedRoute from './components/ProtectedRoute';
+
 
 function App() {
   return (
@@ -12,9 +15,10 @@ function App() {
       <TitleBar />
       <NavBar />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/form" element={<PickFormPage />} />
-        <Route path="/leaderboard" element={<LeaderboardPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/" element={<ProtectedRoute><HomePage /></ProtectedRoute>} />
+        <Route path="/form" element={<ProtectedRoute><PickFormPage /></ProtectedRoute>} />
+        <Route path="/leaderboard" element={<ProtectedRoute><LeaderboardPage /></ProtectedRoute>} />
       </Routes>
     </Router>
   );

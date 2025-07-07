@@ -1,52 +1,130 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import './Leaderboard.css';
 
 export default function Leaderboard() {
-  const [data, setData] = useState([]);
-  
-const leaderboardUrl = `${process.env.REACT_APP_LEADERBOARD_URL}?t=${Date.now()}`;
+  const [meta, setMeta] = useState({ year: '', week: '', updatedAt: '', games: [] });
+  const [rawData, setRawData] = useState([]);
 
   useEffect(() => {
-    console.log(`Fetching leaderboard data from: ${leaderboardUrl}`);
-    fetch(leaderboardUrl)
-      .then(res => res.json())
-      .then(json => {
-        // Optional: group and summarize by player
-        const grouped = summarize(json);
-        setData(grouped);
+    const fetchLeaderboard = async () => {
+      const res = await fetch(`${process.env.REACT_APP_LEADERBOARD_URL}?t=${Date.now()}`);
+      const json = await res.json();
+      setMeta({
+        year: json.year,
+        week: json.week,
+        updatedAt: json.updatedAt,
+        games: json.games || []
       });
+      setRawData(json.data || []);
+    };
+
+    fetchLeaderboard();
   }, []);
 
-  const summarize = (rows) => {
-    const totals = {};
-    rows.forEach(row => {
-      const key = row['Email'];
-      if (!totals[key]) totals[key] = { email: key, points: 0 };
-      totals[key].points += Number(row['Points'] || 0);
-    });
-    return Object.values(totals).sort((a, b) => b.points - a.points);
-  };
+  if (!rawData.length) return <p>Loading leaderboard...</p>;
+
+  // 🔢 Group picks by player
+  const grouped = rawData.reduce((acc, row) => {
+    const email = row.Email || row['Email Address'];
+    if (!acc[email]) acc[email] = [];
+    acc[email].push(row);
+    return acc;
+  }, {});
+
+  // 📦 Transform for Pick Table
+  const pickRows = Object.entries(grouped).map(([email, picks]) => {
+    const sorted = picks.sort((a, b) => a['Game #'] - b['Game #']);
+    const total = sorted.reduce((sum, p) => sum + (Number(p.Points) || 0), 0);
+    return {
+      email,
+      week: sorted[0].Week,
+      picks: sorted.map(p => ({
+        Pick: p.Pick,
+        Points: p.Points,
+        'Correct Outcome': p['Correct Outcome']
+      })),
+      total
+    };
+  });
+
+  const maxGames = Math.max(...Object.values(grouped).map(p => p.length));
 
   return (
-    <div style={{ padding: '2rem' }}>
-      <h1>🏈 Weekly Leaderboard</h1>
-      <table>
+    <div className="leaderboard-container">
+      <h3>Pick results: {meta.year}, week {meta.week}</h3>
+      <table className="leaderboard-table">
         <thead>
           <tr>
-            <th>Rank</th>
-            <th>Player</th>
-            <th>Total Points</th>
+            <th>Email</th>
+            <th>Week</th>
+            {Array.from({ length: maxGames }).flatMap((_, j) => [
+              <th key={`game-${j}`}>Game {j + 1}</th>,
+              <th key={`points-${j}`}>Points</th>
+            ])}
+            <th>Total</th>
           </tr>
         </thead>
         <tbody>
-          {data.map((player, index) => (
-            <tr key={player.email}>
-              <td>{index + 1}</td>
+          {pickRows.map((player, i) => (
+            <tr key={i} style={{ backgroundColor: i % 2 === 0 ? '#f9f9f9' : '#ffffff' }}>
               <td>{player.email}</td>
-              <td>{player.points.toFixed(1)}</td>
+              <td>{player.week}</td>
+              {Array.from({ length: maxGames }).flatMap((_, j) => {
+                const pick = player.picks[j];
+                const isCorrect = pick?.Pick === pick?.['Correct Outcome'];
+                return [
+                  <td
+                    key={`pick-${i}-${j}`}
+                    className={isCorrect ? 'leaderboard-correct' : ''}
+                  >
+                    {pick?.Pick ?? ''}
+                  </td>,
+                  <td key={`pts-${i}-${j}`}>{pick?.Points ?? ''}</td>
+                ];
+              })}
+              <td><strong>{player.total}</strong></td>
             </tr>
           ))}
+        </tbody>
+      </table>
+
+
+      <h3>Game results: {meta.year}, week {meta.week}</h3>
+      <table className="leaderboard-table">
+        <thead>
+          <tr>
+            <th>Game</th>
+            <th>Kickoff</th>
+            <th>Matchup</th>
+            <th>O/U</th>
+            <th>Home Score</th>
+            <th>Away Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          {meta.games.map((game, i) => {
+            const formattedKickoff = new Date(game.Kickoff).toLocaleString('en-US', {
+              weekday: 'short',
+              month: 'short',
+              day: 'numeric',
+              hour: 'numeric',
+              minute: '2-digit'
+            });
+
+            return (
+              <tr key={i} style={{ backgroundColor: i % 2 === 0 ? '#f9f9f9' : '#ffffff' }}>
+                <td>{i + 1}</td>
+                <td>{formattedKickoff}</td>
+                <td>{`${game['Away Team']} (${game['Away Spread']}) @ ${game['Home Team']}`}</td>
+                <td>{game.OU}</td>
+                <td>{game['Home Points']}</td>
+                <td>{game['Away Points']}</td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>
   );
 }
+
