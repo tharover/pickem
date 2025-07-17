@@ -2,26 +2,45 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
-    const [group, setGroup] = useState('');
+    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const navigate = useNavigate();
-    const appScriptUrl = 'https://script.google.com/macros/s/AKfycbwPMF0tBSsCmm19z3pEN2yiXc1oXINfsu1-a-JYJ8-L9qn4w_0RDrNzWW7fNCZaelH-/exec';
 
+    const appScriptUrl = `https://pickem-proxy-git-main-tharovers-projects.vercel.app/api/proxy`;
+
+    // **********************************************************************
+    // Handle form submission
+    // **********************************************************************
     const handleLogin = async (e) => {
         e.preventDefault();
 
-        try {
-            const res = await fetch(
-                `https://script.google.com/macros/s/AKfycbwPMF0tBSsCmm19z3pEN2yiXc1oXINfsu1-a-JYJ8-L9qn4w_0RDrNzWW7fNCZaelH-/exe?func=doLogin&group=${encodeURIComponent(group)}&password=${encodeURIComponent(password)}`
-            );
-            const data = await res.json();
+        // Assuming these are controlled form inputs stored in state
+        const payload = {
+            func: 'doLogin', 
+            username: username.trim(),
+            password: password.trim()
+        };
 
-            if (data.status === 'success' && data.token) {
-                localStorage.setItem('token', data.token);
-                navigate('/home'); // or wherever your protected routes start
+        try {
+            const res = await fetch(appScriptUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            });
+
+            const response = await res.json();
+
+            console.log('Login status:', response.status);
+            if (response.status === 'success' && response.data.token) {
+                localStorage.setItem('token', response.data.token);
+                localStorage.setItem('email', username);
+                navigate('/home');
             } else {
-                setError('Invalid group or password.');
+                console.error('Login error:', response);
+                setError('Invalid username or password');
             }
         } catch (err) {
             console.error('Login error:', err);
@@ -30,12 +49,13 @@ export default function Login() {
     };
 
     return (
-        <form onSubmit={handleLogin} style={{ maxWidth: 400, margin: '0 auto' }}>
+        <form autoComplete='off' onSubmit={handleLogin} style={{ maxWidth: 400, margin: '0 auto' }}>
             <h2>Pick’em Login</h2>
             <label>
-                Group Name:
-                <input value={group} onChange={e => setGroup(e.target.value)} required />
+                Email:
+                <input value={username} onChange={e => setUsername(e.target.value)} required />
             </label>
+            <br />
             <label>
                 Password:
                 <input type="password" value={password} onChange={e => setPassword(e.target.value)} required />

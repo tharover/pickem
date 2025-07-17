@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Leaderboard.css';
+import '../styles/Leaderboard.css';
 
 export default function Leaderboard() {
   const [meta, setMeta] = useState({ year: '', week: '', updatedAt: '', games: [] });
