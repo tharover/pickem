@@ -1,0 +1,232 @@
+/* src/PickForm.css */
+
+.pick-section {
+  text-align: center;
+  padding: 1rem;
+  /* New addition: */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pick-container {
+  width: 85%;
+  max-width: 980px;
+  height: 75vh;
+  /* 75% of the viewport height */
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+legend {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #d31b28; /* scarlet */
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid #ccc;
+  display: block;
+}
+
+.game-card {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-left: 6px solid crimson;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.game-card.locked {
+  background-color: #f0f0f0;
+  opacity: 0.8;
+  pointer-events: none;
+  border: 1px dashed #aaa;
+}
+
+.game-card.locked legend {
+  color: #666;
+  font-style: italic;
+}
+
+.game-card.locked .radio-label {
+  color: #888;
+}
+
+.radio-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
+.group-column {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.radio-item {
+  width: 100%;
+  max-width: 120px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0.6rem 0.4rem;
+  background-color: #f7f7f7;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* 🧠 Mobile adjustments */
+@media (max-width: 600px) {
+  .radio-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .group-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 0.4rem;
+  }
+}
+
+.radio-label {
+  padding: 0.5rem 1rem;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  color: #333;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.radio-input {
+  display: none;
+}
+
+.radio-input:checked+.radio-label {
+  background-color: #990000;
+  /* Scarlet */
+  color: #fff;
+  border-color: #990000;
+}
+
+.locked {
+  opacity: 0.6;
+  background: #f2f2f2;
+}
+
+.matchup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .matchup {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.sticky-submit {
+  position: sticky;
+  bottom: 0;
+  background: white;
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  z-index: 10;
+}
+
+.sticky-submit button {
+  padding: 0.5rem 1.25rem;
+  margin-right: 1.5rem;
+  background-color: #d31b28;
+  /* scarlet */
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.sticky-submit button.clear-button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #999;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.sticky-submit button.clear-button:hover {
+  background-color: #666;
+}
+
+button:disabled {
+  background-color: #ccc;
+  color: #666;
+  border: 2px dashed #999;
+  cursor: not-allowed;
+  opacity: 0.85;
+  transition: background-color 0.3s ease;
+}
+
+button[disabled]::after {
+  content: 'All games locked';
+  position: absolute;
+  top: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 100;
+}
+
+button[disabled]:hover::after {
+  opacity: 1;
+}
+
+button:disabled:hover {
+  background-color: #bbb;
+}
+
+.game-card legend {
+  font-weight: 600;
+}
+
+.game-card p {
+  margin: 0.25rem 0;
+  color: #444;
+}
+
+.spread-badge {
+  background: #222;
+  color: #fff;
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0.3rem 0 0.6rem 0;
+  /*animation: pulse 1.5s infinite ease-in-out;*/
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1);   opacity: 1; }
+  50%  { transform: scale(1.05); opacity: 0.85; }
+  100% { transform: scale(1);   opacity: 1; }
+}

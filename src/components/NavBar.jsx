@@ -1,20 +1,33 @@
-import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import '../styles/NavBar.css';
 
 export default function NavBar() {
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleLogout = () => {
-    localStorage.removeItem('token'); // ✅ Remove token
-    localStorage.removeItem('email'); // ✅ Remove email
-    navigate('/login'); // 🔁 Redirect to login
+    localStorage.removeItem('token');
+    localStorage.removeItem('email');
+    navigate('/login');
   };
 
+  const links = [
+    { path: '/', label: 'Home' },
+    { path: '/form', label: 'Picks' },
+    { path: '/leaderboard', label: 'Leaderboard' }
+  ];
+
   return (
-    <nav style={{ display: 'flex', gap: '1rem', justifyContent: 'center', margin: '1rem 0' }}>
-      <Link to="/">Home</Link>
-      <Link to="/form">Submit Picks</Link>
-      <Link to="/leaderboard">Leaderboard</Link>
+    <nav className="app-nav">
+      {links.map(({ path, label }) => (
+        <Link
+          key={path}
+          to={path}
+          className={`nav-link ${location.pathname === path ? 'active' : ''}`}
+        >
+          {label}
+        </Link>
+      ))}
       <button onClick={handleLogout} className="nav-link logout">
         Logout
       </button>

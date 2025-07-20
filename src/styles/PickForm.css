@@ -1,188 +1,281 @@
-/* src/PickForm.css */
-
-.pick-section {
-  text-align: center;
-  padding: 1rem;
-  /* New addition: */
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.pick-container {
-  width: 85%;
-  max-width: 980px;
-  height: 75vh;
-  /* 75% of the viewport height */
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+/* ========================
+   Container & Layout
+======================== */
+.form-container {
+  max-width: 700px;
   margin: 0 auto;
-}
-
-legend {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #d31b28; /* scarlet */
-  margin-bottom: 0.5rem;
-  padding: 0.25rem 0;
-  border-bottom: 1px solid #ccc;
-  display: block;
-}
-
-.game-card {
-  background: #fff;
-  border: 1px solid #ccc;
-  border-left: 6px solid crimson;
+  padding: 2rem;
+  background-color: #f9fafb;
   border-radius: 10px;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.game-card.locked {
+.form-instructions {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+/* ========================
+   Game Rows & Cards
+======================== */
+.game-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.game-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.game-row.locked {
   background-color: #f0f0f0;
   opacity: 0.8;
   pointer-events: none;
   border: 1px dashed #aaa;
 }
 
-.game-card.locked legend {
-  color: #666;
+.game-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* anchors bottom info */
+}
+
+.game-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-pick-info {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #444;
+}
+
+.game-info h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.game-info p {
+  margin: 0.25rem 0;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.ou-line {
   font-style: italic;
+  color: #666;
+  margin-top: 0.5rem;
 }
 
-.game-card.locked .radio-label {
-  color: #888;
-}
-
-.radio-group {
+.pick-column {
+  flex: 0 0 140px;
   display: flex;
-  gap: 1rem;
-  flex-wrap: nowrap;
-}
-
-.group-column {
-  display: flex;
+  flex-direction: column;
   gap: 0.5rem;
+  padding-top: 0.25rem;
+}
+
+
+/* ========================
+   Email Input in Game Row
+======================== */
+.email-wrapper {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.email-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.email-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #333;
+  white-space: nowrap;
+}
+
+.email-input {
+  background-color: #f4f4f4;
+  color: #555;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: not-allowed;
+  opacity: 0.95;
+  width: 280px;
+  text-align: left;
+}
+
+/* ========================
+   Pick Column & Buttons
+======================== */
+.pick-column {
+  flex: 0 0 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
 }
 
 .radio-item {
-  width: 100%;
-  max-width: 120px;
-  box-sizing: border-box;
-  text-align: center;
-  padding: 0.6rem 0.4rem;
-  background-color: #f7f7f7;
-  border-radius: 6px;
-  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-/* 🧠 Mobile adjustments */
-@media (max-width: 600px) {
-  .radio-group {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .group-column {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    gap: 0.4rem;
-  }
+.radio-input {
+  accent-color: #4CAF50;
 }
 
 .radio-label {
-  padding: 0.5rem 1rem;
-  border: 2px solid #ccc;
-  border-radius: 6px;
-  color: #333;
-  cursor: pointer;
   font-weight: 500;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  font-size: 0.95rem;
+}
+
+/* ========================
+   Highlight Favorites
+======================== */
+.favorite {
+  font-weight: bold;
+  color: #DAA520;
+}
+
+/.tbd {
+  color: #888;
+  font-style: italic;
+}
+
+/* ========================
+   Submit & Clear Buttons
+======================== */
+.sticky-submit {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.submit-button {
+  background: linear-gradient(to right, #4CAF50, #45A049);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.submit-button:disabled {
+  background: #ccc;
+  color: #666;
+  border: 2px dashed #999;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.85;
+}
+
+.submit-button:disabled:hover::after {
+  opacity: 1;
+}
+
+.clear-button {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.clear-button:hover {
+  background-color: #ddd;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ========================
+   Radio Button Styles
+======================== */
+.radio-item {
+  display: flex;
+  align-items: center;
 }
 
 .radio-input {
   display: none;
 }
 
-.radio-input:checked+.radio-label {
-  background-color: #990000;
-  /* Scarlet */
-  color: #fff;
-  border-color: #990000;
-}
-
-.locked {
-  opacity: 0.6;
-  background: #f2f2f2;
-}
-
-.matchup {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  border: 1px solid #ccc;
-  padding: 0.75rem;
-  border-radius: 8px;
-}
-
-@media (max-width: 600px) {
-  .matchup {
-    flex-direction: column;
-    align-items: stretch;
-  }
-}
-
-.sticky-submit {
-  position: sticky;
-  bottom: 0;
-  background: white;
-  padding: 1rem;
-  border-top: 1px solid #ccc;
-  text-align: center;
-  z-index: 10;
-}
-
-.sticky-submit button {
-  padding: 0.5rem 1.25rem;
-  margin-right: 1.5rem;
-  background-color: #d31b28;
+.radio-label:hover {
+  background-color: #bb0000;
   /* scarlet */
-  color: white;
-  border: none;
-  border-radius: 4px;
+  color: #fff;
+  transform: scale(1.05);
+  border-color: #bb0000;
 }
 
-.sticky-submit button.clear-button {
-  margin-left: 1rem;
+.radio-label {
+  background-color: #fff;
+  color: #000;
   padding: 0.5rem 1rem;
-  background-color: #999;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.sticky-submit button.clear-button:hover {
-  background-color: #666;
-}
-
-
-.toast {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  padding: 0.75rem 1rem;
-  border-radius: 6px;
-  color: white;
-  z-index: 1000;
+  border-radius: 20px;
+  font-size: 0.95rem;
   font-weight: 500;
+  width: 120px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid #bbb;
+  transition: background-color 0.2s ease;
 }
-.toast.success {
-  background-color: #2e7d32;
+
+.radio-label.selected-pick {
+  background-color: #bb0000;
+  color: #fff;
+  border-color: #bb0000;
+  font-weight: 600;
 }
-.toast.warning {
-  background-color: #d31b28; /* scarlet works great here */
+
+.radio-label.previous-pick {
+  background-color: #fdf5e6;
+  color: #333;
+  border: 2px dashed #666;
+  font-weight: 500;
 }

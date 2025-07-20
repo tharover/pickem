@@ -1,26 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { fetchGameData } from '../utils/useGameFetcher';
 import Toast from '../components/Toast';
 import { PROXY_URL } from '../config';
 import '../styles/PickForm.css';
 
-const PickForm = ({ games, setGames, year, setYear, week, setWeek }) => {
+const PickForm = ({ games, year, week }) => {
     const [submitStatus, setSubmitStatus] = useState('');
     const [submitting, setSubmitting] = useState(false);
-    const [currentPicks, setCurrentPicks] = useState({});
     const [toast, setToast] = useState({ message: '', type: '' });
     const allGamesLocked = games.length > 0 && games.every(game => new Date() > new Date(game.gameTime));
-
-    useEffect(() => {
-        const initial = {};
-        games.forEach(game => {
-            if (game.userPick) {
-                initial[game.gameId] = game.userPick;
-            }
-        });
-        setCurrentPicks(initial);
-    }, [games]);
-
 
     // ***********************************************************************
     // Handle clearing form
@@ -65,8 +52,7 @@ const PickForm = ({ games, setGames, year, setYear, week, setWeek }) => {
         }
 
         if (hasMissingPick) {
-            setToast({ message: '❌ Please make a pick for all unlocked games!', type: 'error' });
-            setSubmitStatus('❌ Please make a pick for all unlocked games!');
+            setToast({ message: 'Please make a pick for all unlocked games!', type: 'warning' });
             setSubmitting(false);
             return;
         }
@@ -99,33 +85,10 @@ const PickForm = ({ games, setGames, year, setYear, week, setWeek }) => {
             });
 
             const data = await res.json();
-            if (data.status === 'success') {
-                setToast({ message: 'Picks submitted successfully!', type: 'success' });
-                setSubmitStatus('✅ Picks submitted successfully!');
-                setSubmitting(false);
-                setToast({ message: `Updating game data...`, type: 'info' });
-
-                // Clear local storage cache to force refresh
-                localStorage.removeItem('pickem_games');
-                const fetchData = await fetchGameData(true);
-                if (fetchData) {
-                    setGames(fetchData.games || []);
-                    setCurrentPicks(() => {
-                        const initial = {};
-                        fetchData.games.forEach(game => {
-                            if (game.userPick) initial[game.gameId] = game.userPick;
-                        });
-                        return initial;
-                    });
-                    setYear(fetchData.year || null);
-                    setWeek(fetchData.week || null);
-                }
-            } else {
-                setToast({ message: `Submission failed: ${data.message}`, type: 'error' });
-                setSubmitStatus(`❌ Submission failed: ${data.message}`);
-            }
+            setSubmitStatus(data.status === 'success'
+                ? '✅ Picks submitted successfully!'
+                : `❌ Submission failed: ${data.message}`);
         } catch (err) {
-            setToast({ message: `Submission failed: ${err}`, type: 'error' });
             setSubmitStatus('❌ Submission error. Try again.');
         } finally {
             setSubmitting(false);
@@ -174,73 +137,39 @@ const PickForm = ({ games, setGames, year, setYear, week, setWeek }) => {
                 <p>Note: Game picks cannot be submitted after kickoff.</p>
             </div>
 
-            <div className="game-row email-wrapper">
-                <div className="email-row">
-                    <label htmlFor="userEmail" className="email-label">Email:</label>
-                    <input
-                        id="userEmail"
-                        type="email"
-                        name="userEmail"
-                        value={localStorage.getItem('email')}
-                        required
-                        disabled
-                        className="email-input"
-                    />
-                </div>
+            <div className="game-card" style={{ marginBottom: '1rem' }}>
+                <label htmlFor='userEmail' className="email-label">
+                    Email:
+                </label>
+                <input
+                    id="userEmail"
+                    type="email"
+                    name="userEmail"
+                    value={localStorage.getItem('email')}
+                    required
+                    disabled
+                    className="email-input"
+                />
             </div>
 
             {games.map((game, index) => {
                 const isLocked = new Date() > new Date(game.gameTime);
-
                 return (
-                    <div key={game.gameId || index} className={`game-card ${isLocked ? 'locked' : ''}`}>
-                        <div className="game-row">
-                            <div className="game-info">
-                                <div className="game-top">
-                                    <h4>Game {index + 1}: {formatGameDate(game.gameTime)}</h4>
-                                    <p>{game.away} ({formatSpread(game.awaySpread)})</p>
-                                    <p>{game.home} ({formatSpread(game.homeSpread)})</p>
-                                    <p className="ou-line">O/U: {formatSpread(game.overUnder)}</p>
-                                </div>
+                    <div key={index} className={`game-card ${isLocked ? 'locked' : ''}`}>
+                        <input type="hidden" name="id" key={`game-${index}-id`} value={game.gameId} />
+                        <legend>
+                            {game.home} ({formatSpread(game.homeSpread)}) vs {game.away} ({formatSpread(game.awaySpread)}) – {formatGameDate(game.gameTime)}
+                            {isLocked && <span style={{ color: 'gray', marginLeft: '0.5rem' }}>🕒 Locked</span>}
+                        </legend>
+                        <div className="spread-badge">
+                            <span>O/U: </span>
+                            <strong>{formatSpread(game.overUnder)}</strong>
+                        </div>
 
-                                {/* 🕒 Pick submitted info */}
-                                <div className="game-pick-info">
-                                    {game.userPick && game.userPickTimestamp ? (
-                                        <p>
-                                            🕒 Pick submitted: {new Date(game.userPickTimestamp).toLocaleString('en-US', {
-                                                timeZone: 'America/New_York',
-                                                month: 'short',
-                                                day: 'numeric',
-                                                hour: 'numeric',
-                                                minute: '2-digit',
-                                                hour12: true
-                                            })}
-                                        </p>
-                                    ) : (
-                                        <p style={{ fontStyle: 'italic', color: '#888' }}>No pick submitted yet.</p>
-                                    )}
-                                </div>
-                            </div>
-
-                            <div className="pick-column">
-                                {['Away', 'Home', 'Over', 'Under'].map((option) => {
+                        <div className="radio-group">
+                            <div className="group-column">
+                                {['Home', 'Away'].map((option) => {
                                     const inputId = `game-${index}-${option}`;
-                                    const currentPick = currentPicks[game.gameId];
-                                    const prevPick = game.userPick;
-
-                                    const isCurrent = currentPick === option;
-                                    const isPrevious = prevPick === option;
-
-                                    let labelClass = 'radio-label';
-
-                                    if (isCurrent) {
-                                        // Always scarlet for current selection
-                                        labelClass += ' selected-pick';
-                                    } else if (prevPick && isPrevious && currentPick !== prevPick) {
-                                        // Alternate style if user selected something else
-                                        labelClass += ' previous-pick';
-                                    }
-
                                     return (
                                         <div key={option} className="radio-item">
                                             <input
@@ -249,22 +178,42 @@ const PickForm = ({ games, setGames, year, setYear, week, setWeek }) => {
                                                 name={`game-${index}`}
                                                 value={option}
                                                 className="radio-input"
-                                                checked={isCurrent}
-                                                onChange={() =>
-                                                    setCurrentPicks(prev => ({ ...prev, [game.gameId]: option }))
-                                                }
                                             />
-                                            <label htmlFor={inputId} className={labelClass}>
+                                            <label htmlFor={inputId} className="radio-label">
                                                 {option}
                                             </label>
                                         </div>
                                     );
                                 })}
+                            </div>
 
+                            <div className="group-column">
+                                {['Over', 'Under'].map((option) => {
+                                    const inputId = `game-${index}-${option}`;
+                                    return (
+                                        <div key={option} className="radio-item">
+                                            <input
+                                                type="radio"
+                                                id={inputId}
+                                                name={`game-${index}`}
+                                                value={option}
+                                                className="radio-input"
+                                            />
+                                            <label htmlFor={inputId} className="radio-label">
+                                                {option}
+                                            </label>
+                                        </div>
+                                    );
+                                })}
                             </div>
                         </div>
-                    </div>
 
+                        <input type="hidden" name="id" key="id" value={game.gameId} />
+
+                        {isLocked && <p style={{ color: 'gray' }}>🕒 Locked — game in progress</p>}
+
+
+                    </div>
                 );
             })}
 

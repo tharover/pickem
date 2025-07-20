@@ -19,6 +19,7 @@ function App() {
         <Route path="/status" element={<StatusPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/" element={<ProtectedRoute><HomePage /></ProtectedRoute>} />
+        <Route path="/home" element={<ProtectedRoute><HomePage /></ProtectedRoute>} />
         <Route path="/form" element={<ProtectedRoute><PickFormPage /></ProtectedRoute>} />
         <Route path="/leaderboard" element={<ProtectedRoute><LeaderboardPage /></ProtectedRoute>} />
       </Routes>
