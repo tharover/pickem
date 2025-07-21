@@ -1,11 +1,47 @@
+/* 🔧 Fix desktop layout */
 .app-nav {
-  background-color: #e0e0e0; /* Soft gray */
-  padding: 0.75rem 1.5rem;
+  background-color: #e0e0e0;
+  padding: 0.25rem 0.5rem;
   display: flex;
+  align-items: center;
   justify-content: center;
+  /* ✅ Center content */
+  position: relative;
+  flex-wrap: wrap;
+  /* Remove border on desktop by default */
+  border-bottom: none;
+}
+
+/* ✅ Restore border only on small screens */
+@media (max-width: 600px) {
+  .app-nav {
+    border-bottom: 1px solid #ccc;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-toggle {
+    align-self: flex-end;
+  }
+}
+
+/* Hide toggle by default */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Nav link styles */
+.nav-links {
+  display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  border-bottom: 1px solid #ccc;
+  justify-content: center;
+  /* ✅ Ensure links stay centered */
+  align-items: center;
 }
 
 .nav-link {
@@ -26,4 +62,35 @@
   background-color: #bb0000;
   color: white;
   font-weight: 700;
+}
+
+.logout-link {
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Responsive Dropdown */
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: left;
+  }
 }

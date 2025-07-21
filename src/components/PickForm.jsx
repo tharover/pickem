@@ -160,70 +160,61 @@ const PickForm = ({ games, setGames, year, setYear, week, setWeek }) => {
     // Render the pick form
     // ***********************************************************************
     return (
-        <form onSubmit={handleSubmit} className="form-container">
-            <Toast
-                message={toast.message}
-                type={toast.type}
-                onDismiss={() => setToast({ message: '', type: '' })}
-            />
+        <div className="pick-form-wrapper">
+            <form onSubmit={handleSubmit} className="form-container">
+                <Toast
+                    message={toast.message}
+                    type={toast.type}
+                    onDismiss={() => setToast({ message: '', type: '' })}
+                />
 
-            <h2>🏈 {year} Week {week} Pick'em</h2>
+                {/* 🏈 Title */}
+                <h2 className="form-title">{year} Week {week} Pick'em</h2>
 
-            <div className="form-instructions">
-                <p>Make your picks for this week's games. Select Home or Away to accept the spread or indicate if you think the game will go Over or Under the point spread.</p>
-                <p>Note: Game picks cannot be submitted after kickoff.</p>
-            </div>
-
-            <div className="game-row email-wrapper">
-                <div className="email-row">
-                    <label htmlFor="userEmail" className="email-label">Email:</label>
-                    <input
-                        id="userEmail"
-                        type="email"
-                        name="userEmail"
-                        value={localStorage.getItem('email')}
-                        required
-                        disabled
-                        className="email-input"
-                    />
+                {/* 📘 Instructions */}
+                <div className="form-instructions">
+                    <p>Make your picks for this week's games. Select Home or Away to accept the spread or indicate if you think the game will go Over or Under the point spread.</p>
+                    <p>Note: Game picks cannot be submitted after kickoff.</p>
                 </div>
-            </div>
 
-            {games.map((game, index) => {
-                const isLocked = new Date() > new Date(game.gameTime);
+                {/* 📧 Email Info */}
+                <div className="game-card email-card">
+                    <div className="email-row">
+                        <label htmlFor="userEmail" className="email-label">Email:</label>
+                        <input
+                            id="userEmail"
+                            type="email"
+                            name="userEmail"
+                            value={localStorage.getItem('email')}
+                            required
+                            disabled
+                            className="email-input"
+                        />
+                    </div>
+                </div>
 
-                return (
-                    <div key={game.gameId || index} className={`game-card ${isLocked ? 'locked' : ''}`}>
-                        <div className="game-row">
-                            <div className="game-info">
-                                <div className="game-top">
-                                    <h4>Game {index + 1}: {formatGameDate(game.gameTime)}</h4>
-                                    <p>{game.away} ({formatSpread(game.awaySpread)})</p>
-                                    <p>{game.home} ({formatSpread(game.homeSpread)})</p>
-                                    <p className="ou-line">O/U: {formatSpread(game.overUnder)}</p>
-                                </div>
+                {/* 🧩 Game Entries */}
+                {games.map((game, index) => {
+                    const isLocked = new Date() > new Date(game.gameTime);
 
-                                {/* 🕒 Pick submitted info */}
-                                <div className="game-pick-info">
-                                    {game.userPick && game.userPickTimestamp ? (
-                                        <p>
-                                            🕒 Pick submitted: {new Date(game.userPickTimestamp).toLocaleString('en-US', {
-                                                timeZone: 'America/New_York',
-                                                month: 'short',
-                                                day: 'numeric',
-                                                hour: 'numeric',
-                                                minute: '2-digit',
-                                                hour12: true
-                                            })}
-                                        </p>
-                                    ) : (
-                                        <p style={{ fontStyle: 'italic', color: '#888' }}>No pick submitted yet.</p>
-                                    )}
-                                </div>
+                    return (
+                        <div key={game.gameId || index} className={`game-card ${isLocked ? 'locked' : ''}`}>
+                            {/* Game Header */}
+                            <div className="game-header">
+                                <h4>Game {index + 1}: {formatGameDate(game.gameTime)}</h4>
                             </div>
 
-                            <div className="pick-column">
-                                {['Away', 'Home', 'Over', 'Under'].map((option) => {
+                            {/* Matchup Info */}
+                            <div className="game-info">
+                                <p className='Away'>{game.away} ({formatSpread(game.awaySpread)})</p>
+                                <p className='vs'>--- vs ---</p>
+                                <p className='Home'>{game.home} ({formatSpread(game.homeSpread)})</p>
+                                <p className="ou-line">Over / Under: {formatSpread(game.overUnder)}</p>
+                            </div>
+
+                            {/* Betting Choices */}
+                            <div className="game-picks">
+                                {['Home', 'Away', 'Over', 'Under'].map((option) => {
                                     const inputId = `game-${index}-${option}`;
                                     const currentPick = currentPicks[game.gameId];
                                     const prevPick = game.userPick;
@@ -232,12 +223,9 @@ const PickForm = ({ games, setGames, year, setYear, week, setWeek }) => {
                                     const isPrevious = prevPick === option;
 
                                     let labelClass = 'radio-label';
-
                                     if (isCurrent) {
-                                        // Always scarlet for current selection
                                         labelClass += ' selected-pick';
                                     } else if (prevPick && isPrevious && currentPick !== prevPick) {
-                                        // Alternate style if user selected something else
                                         labelClass += ' previous-pick';
                                     }
 
@@ -260,26 +248,43 @@ const PickForm = ({ games, setGames, year, setYear, week, setWeek }) => {
                                         </div>
                                     );
                                 })}
+                            </div>
 
+                            {/* Submission Timestamp */}
+                            <div className="game-pick-info">
+                                {game.userPick && game.userPickTimestamp ? (
+                                    <p>
+                                        🕒 Pick submitted: {new Date(game.userPickTimestamp).toLocaleString('en-US', {
+                                            timeZone: 'America/New_York',
+                                            month: 'short',
+                                            day: 'numeric',
+                                            hour: 'numeric',
+                                            minute: '2-digit',
+                                            hour12: true
+                                        })}
+                                    </p>
+                                ) : (
+                                    <p style={{ fontStyle: 'italic', color: '#888' }}>No pick submitted yet.</p>
+                                )}
                             </div>
                         </div>
-                    </div>
+                    );
+                })}
 
-                );
-            })}
+                {/* 🚀 Footer Buttons */}
+                <div className="sticky-submit">
+                    <button type="submit" disabled={submitting || allGamesLocked} className="submit-button">
+                        {submitting ? '📤 Submitting...' : 'Submit Picks'}
+                    </button>
 
-            <div className="sticky-submit">
-                <button type="submit" disabled={submitting || allGamesLocked} className="submit-button">
-                    {submitting ? '📤 Submitting...' : 'Submit Picks'}
-                </button>
-
-                <button type="button" onClick={handleClear} className="clear-button">
-                    Clear Picks
-                </button>
-            </div>
-
-        </form>
+                    <button type="button" onClick={handleClear} className="clear-button">
+                        Clear Picks
+                    </button>
+                </div>
+            </form>
+        </div>
     );
+
 };
 
 export default PickForm;
