@@ -162,11 +162,22 @@ export default function Leaderboard() {
 
                 {expandedUser === user.email &&
                   user.results.map((r, i) => (
-                    <tr key={`detail-${user.email}-${i}`} className="detail-row">
-                      <td>{r.matchup}</td>
-                      <td>{r.pick}</td>
-                      <td>{r.points}</td>
-                    </tr>
+                    <>
+                      {/* 🌐 Desktop view */}
+                      <tr key={`desktop-${user.email}-${i}`} className="desktop-row detail-row">
+                        <td>{r.matchup}</td>
+                        <td>{r.points}</td>
+                        <td>{r.pick}</td>
+                      </tr>
+
+                      {/* 📱 Mobile stacked view */}
+                      <tr key={`mobile1-${user.email}-${i}`} className="mobile-row mobile-matchup-row detail-row">
+                        <td colSpan="3"><strong>{r.matchup}</strong></td>
+                      </tr>
+                      <tr key={`mobile3-${user.email}-${i}`} className="mobile-row detail-row">
+                        <td colSpan="3"><strong>Pick: </strong> {r.pick} ({r.points} points)</td>
+                      </tr>
+                    </>
                   ))}
               </>
             ))}
@@ -180,7 +191,7 @@ export default function Leaderboard() {
         <h3>Game Results</h3>
         <table className="leaderboard-table">
           <thead>
-            <tr>
+            <tr className="desktop-row">
               <th>Matchup</th>
               <th>Home</th>
               <th>Away</th>
@@ -190,13 +201,33 @@ export default function Leaderboard() {
           </thead>
           <tbody>
             {gameSummaries.map(g => (
-              <tr key={`game-${g.gameId}`}>
-                <td>{g.matchup}</td>
-                <td>{g.home}</td>
-                <td>{g.away}</td>
-                <td>{g.over}</td>
-                <td>{g.under}</td>
-              </tr>
+              <>
+                {/* 🌐 Desktop View */}
+                <tr key={`game-${g.gameId}`} className="desktop-row">
+                  <td><strong>{g.matchup}</strong></td>
+                  <td>{g.home}</td>
+                  <td>{g.away}</td>
+                  <td>{g.over}</td>
+                  <td>{g.under}</td>
+                </tr>
+
+                {/* 📱 Mobile View */}
+                <tr key={`game-mobile1-${g.gameId}`} className="mobile-row mobile-matchup-row detail-row">
+                  <td colSpan="5"><strong> {g.matchup}</strong></td>
+                </tr>
+                <tr key={`game-mobile2-${g.gameId}`} className="mobile-row detail-row">
+                  <td colSpan="5"><strong>Home:</strong> {g.home} points</td>
+                </tr>
+                <tr key={`game-mobile3-${g.gameId}`} className="mobile-row detail-row">
+                  <td colSpan="5"><strong>Away:</strong> {g.away} points</td>
+                </tr>
+                <tr key={`game-mobile4-${g.gameId}`} className="mobile-row detail-row">
+                  <td colSpan="5"><strong>Over:</strong> {g.over} points</td>
+                </tr>
+                <tr key={`game-mobile5-${g.gameId}`} className="mobile-row detail-row">
+                  <td colSpan="5"><strong>Under:</strong> {g.under} points</td>
+                </tr>
+              </>
             ))}
           </tbody>
         </table>
