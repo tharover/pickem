@@ -1,20 +1,22 @@
 import { PROXY_URL } from '../config';
+import { StorageKeys, storageUtils } from '../utils/storageUtils';
 
 //************************************************************************
 // Fetch game data with caching
 //************************************************************************
 export async function fetchGameData(forceRefresh = false) {
-  const cacheKey = 'pickem_games';
   const now = Date.now();
 
   // Attempt cached data
   if (!forceRefresh) {
-    const cached = localStorage.getItem(cacheKey);
+    const cached = storageUtils.get(StorageKeys.GAMES);
     if (cached) {
-      const { data, timestamp } = JSON.parse(cached);
+      const { games, timestamp } = JSON.parse(cached);
+      console.log('Cached game data:', games);
+      console.log('Cached timestamp:', new Date(timestamp).toLocaleTimeString());
       if (now - timestamp < 15 * 60 * 1000) {
         console.log('Used cached game data, timestamp:', new Date(timestamp).toLocaleTimeString());
-        return data;
+        return games;
       }
     }
   }
@@ -22,7 +24,12 @@ export async function fetchGameData(forceRefresh = false) {
   // Fetch fresh data
   try {
     const email = localStorage.getItem('email');
-    const res = await fetch(`${PROXY_URL}?func=getSelectedGames&email=${email}`);
+    const token = localStorage.getItem('token');
+    if (!email || !token) {
+      console.error('No email or token found in localStorage');
+      return null;
+    }
+    const res = await fetch(`${PROXY_URL}?func=getSelectedGames&email=${email}&token=${token}`);
     const json = await res.json();
 
     const data = {
@@ -31,7 +38,7 @@ export async function fetchGameData(forceRefresh = false) {
       week: json.data?.week || null
     };
 
-    localStorage.setItem(cacheKey, JSON.stringify({ data, timestamp: now }));
+    storageUtils.set(StorageKeys.GAMES, JSON.stringify({ data, timestamp: now }));
     console.log('Fetched new game data, timestamp:', new Date(now).toLocaleTimeString());
 
     return data;
@@ -62,12 +69,16 @@ export async function fetchLeaderboardData(forceRefresh = false) {
 
   // Fetch fresh data
   try {
-    const res = await fetch(`${PROXY_URL}?func=getLeaderboard`);
+    const token = localStorage.getItem('token');
+    if (!token) {
+      console.error('No token found in localStorage');
+      return null;
+    }
+    const res = await fetch(`${PROXY_URL}?func=getLeaderboard&token=${localStorage.getItem('token')}`);
     const json = await res.json();
+    console.log('Leaderboard data(' + new Date(now).toLocaleTimeString() + '):', json);
 
     //localStorage.setItem(cacheKey, JSON.stringify({ data, timestamp: now }));
-    console.log('Fetched leaderboard data, timestamp:', new Date(now).toLocaleTimeString());
-    console.log('Leaderboard data:', json);
 
     return json;
   } catch (err) {

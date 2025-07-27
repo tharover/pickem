@@ -1,5 +1,9 @@
 import Leaderboard from '../components/Leaderboard';
 
 export default function LeaderboardPage() {
-  return <Leaderboard />;
+  return (  
+  <div className="component-wrapper">
+    <Leaderboard />;
+  </div>
+  );
 }

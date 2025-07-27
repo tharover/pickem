@@ -28,27 +28,3 @@
   margin-top: 1rem;
 }
 
-button[type="submit"] {
-  background: linear-gradient(to right, #4CAF50, #45A049);
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 6px;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  cursor: pointer;
-}
-
-button[type="submit"]:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
-
-button[type="submit"]:disabled {
-  background: #ccc;
-  color: #666;
-  box-shadow: none;
-  cursor: not-allowed;
-}

@@ -1,31 +1,68 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { fetchLeaderboardData } from '../utils/useGameFetcher';
 import Toast from '../components/Toast';
 import '../styles/Leaderboard.css';
+import { StorageKeys, storageUtils } from '../utils/storageUtils';
 
 export default function Leaderboard() {
   const [data, setData] = useState(null);
+  const [status, setStatus] = useState('loading'); // 'loading' | 'success' | 'error' | 'refreshing'
   const [expandedUser, setExpandedUser] = useState(null);
-  const [refreshing, setRefreshing] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     loadData();
   }, []);
 
   const loadData = async () => {
-    const result = await fetchLeaderboardData(); // fetches from getLeaderboard(e)
-    setData(result.data.responses);
+    try {
+      const result = await fetchLeaderboardData();
+
+      const status = result?.status;
+      const code = result?.code;
+      const data = result?.data;
+
+      // 🔐 Token Invalid: Clear storage and redirect
+      if (code === 401) {
+        console.warn('🔐 Token invalid — redirecting to login');
+        storageUtils.clearAll();
+        navigate('/login');
+        return;
+      }
+
+      // 🔄 General failure
+      if (status !== 'success' || code !== 200 || !data?.responses) {
+        console.warn('Leaderboard fetch failed:', result);
+        setStatus('error');
+        setData(null);
+        return;
+      }
+
+      // ✅ Successful response
+      setStatus('success');
+      setData(data.responses);
+    } catch (error) {
+      console.error('Error loading leaderboard:', error);
+      setStatus('error');
+      setData(null);
+    }
   };
 
   const refresh = async () => {
-    setRefreshing(true);
-    localStorage.removeItem('leaderboard'); // optional cache bust
-    await loadData();
-    setRefreshing(false);
+    setStatus('refreshing');
+    try {
+      storageUtils.remove(StorageKeys.LEADERBOARD); // Clear cached leaderboard data
+      await loadData();
+      setStatus('success');
+    } catch (error) {
+      console.error('Error refreshing leaderboard:', error);
+      setStatus('error');
+    }
   };
 
   // 🏆 If no data, show loading skeleton
-  if (!data) {
+  if (status === 'loading' || status === 'refreshing') {
     return (
       <div className="leaderboard-wrapper">
         <h2>🏆 Leaderboard: Week ...</h2>
@@ -34,6 +71,24 @@ export default function Leaderboard() {
           <div className="skeleton-block" />
           <div className="skeleton-block" />
           <div className="skeleton-button" />
+        </div>
+      </div>
+    );
+  }
+
+  // 🏆 If error status, show a message
+  if (status === 'error') {
+    return (
+      <div className="leaderboard-wrapper">
+        <h2>🏆 Leaderboard</h2>
+        <p className="leaderboard-error">
+          ⚠️ Leaderboard not currently available. Please try again later.
+        </p>
+        <br />
+        <div className="refresh-button-wrapper">
+          <button onClick={refresh} className="refresh-button" disabled={status === 'refreshing'}>
+            {status === 'refreshing' ? 'Refreshing...' : 'Refresh'}
+          </button>
         </div>
       </div>
     );
@@ -235,8 +290,8 @@ export default function Leaderboard() {
 
       {/* 🔄 Refresh Button */}
       <div className="refresh-button-wrapper">
-        <button onClick={refresh} className="refresh-button" disabled={refreshing}>
-          {refreshing ? '🔄 Refreshing...' : '🔄 Refresh Leaderboard'}
+        <button onClick={refresh} className="refresh-button" disabled={status === 'refreshing'}>
+          {status === 'refreshing' ? '🔄 Refreshing...' : '🔄 Refresh Leaderboard'}
         </button>
       </div>
     </div>

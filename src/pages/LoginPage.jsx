@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { proxyRequest, ProxyFunctions } from '../utils/proxy';
+import { storageUtils, StorageKeys } from '../utils/storageUtils';
 import Toast from '../components/Toast';
 import '../styles/Login.css';
 
@@ -11,7 +13,6 @@ export default function Login() {
 
     const navigate = useNavigate();
 
-    const appScriptUrl = `https://pickem-proxy-git-main-tharovers-projects.vercel.app/api/proxy`;
 
     // **********************************************************************
     // Handle form submission
@@ -20,39 +21,33 @@ export default function Login() {
         e.preventDefault();
         setLoading(true);
 
-        // Ensure username and password are not empty
         if (!username || !password) {
             setToast({ message: 'Please enter both username and password', type: 'warning' });
             setLoading(false);
             return;
         }
 
-        // Assuming these are controlled form inputs stored in state
         const payload = {
-            func: 'doLogin',
             username: username.trim(),
             password: password.trim()
         };
 
-        // Send login request to the App Script
         try {
-            const res = await fetch(appScriptUrl, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(payload)
-            });
-
-            const response = await res.json();
+            const response = await proxyRequest(ProxyFunctions.DO_LOGIN, payload);
 
             console.log('Login status:', response.status);
+
             if (response.status === 'success' && response.data.token) {
-                localStorage.setItem('token', response.data.token);
-                localStorage.setItem('email', username);
+                console.log('Login successful:', response.data);
+                storageUtils.set(StorageKeys.EMAIL, username);
+                storageUtils.set(StorageKeys.TOKEN, JSON.stringify(response.data.token));
+                storageUtils.set(StorageKeys.YEAR, JSON.stringify(response.year));
+                storageUtils.set(StorageKeys.WEEK, JSON.stringify(response.week));
+                storageUtils.set(StorageKeys.GAMES, JSON.stringify({ games: response.data.games, timestamp: Date.now() }));
+
                 navigate('/');
             } else {
-                console.error('Login error:', response);
+                console.error('Login response with error:', response);
                 setToast({ message: 'Invalid username or password', type: 'warning' });
                 setLoading(false);
             }
@@ -63,6 +58,9 @@ export default function Login() {
         }
     };
 
+    // **********************************************************************
+    // Render the login form    
+    // **********************************************************************
     return (
         <form autoComplete='off' onSubmit={handleLogin} style={{ maxWidth: 400, margin: '0 auto' }}>
             <h2>Pick’em Login</h2>
