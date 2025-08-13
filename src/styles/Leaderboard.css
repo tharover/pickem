@@ -57,6 +57,7 @@
 }
 
 .leaderboard-table th {
+  text-align: center;
   background-color: #f5f5f5;
   font-weight: 600;
 }
@@ -74,7 +75,6 @@
 .leaderboard-table td:nth-child(2),
 .leaderboard-table td:nth-child(3) {
   text-align: center;
-  width: 80px;
 }
 
 .user-row {
@@ -216,6 +216,40 @@
   }
 }
 
+.pick-details-wrapper {
+  width: 100%;
+}
+
+.inner-pick-table {
+  width: 100%;
+  table-layout: fixed;
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+  border: 0;
+  border-spacing: 0;
+}
+
+.pick-details-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.pick-details-wrapper.open {
+  max-height: 1000px; /* large enough to fit content */
+}
+
+.pick-details-wrapper {
+  opacity: 0;
+  transform: scaleY(0.95);
+  transition: max-height 0.4s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+.pick-details-wrapper.open {
+  opacity: 1;
+  transform: scaleY(1);
+}
 
 /* 📦 Loading Skeleton */
 .loading-skeleton {
@@ -252,3 +286,4 @@
   height: 36px;
   align-self: center;
 }
+

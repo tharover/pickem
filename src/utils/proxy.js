@@ -9,9 +9,10 @@ const PROXY_URL = process.env.REACT_APP_APPSCRIPT_URL || 'https://pickem-proxy-g
  **********************************************************************/
 export const ProxyFunctions = {
     IS_ALIVE: { method: 'GET', func: 'isAlive', tokenRequired: false },
+    GET_ALL_PLAYERS: { method: 'GET', func: 'getAllPlayers', tokenRequired: true },
     VALIDATE_TOKEN: { method: 'POST', func: 'validateToken', tokenRequired: false },
     GET_SELECTED_GAMES: { method: 'POST', func: 'fetchSelectedGames', tokenRequired: true },
-    GET_LEADERBOARD: { method: 'POST', func: 'fetchLeaderboard', tokenRequired: true },
+    GET_LEADERBOARD: { method: 'POST', func: 'getLeaderboard', tokenRequired: true },
     DO_LOGIN: { method: 'POST', func: 'doLogin', tokenRequired: false },
     SUBMIT_WEEKLY_PICKS: { method: 'POST', func: 'submitWeeklyPicks', tokenRequired: true }
 };
