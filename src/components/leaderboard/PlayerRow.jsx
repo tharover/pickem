@@ -27,7 +27,7 @@ export default function PlayerRow({ player, games, now, expandedUser, setExpande
         onClick={() => setExpandedUser(isExpanded ? null : player.email)}
         style={{ cursor: 'pointer' }}
       >
-        <td>{player.first} {player.last}</td>
+        <td>{player.email} ({player.first})</td>
         <td>{totalPoints}</td>
         <td>{isExpanded ? '▲' : '▼'}</td>
       </tr>
