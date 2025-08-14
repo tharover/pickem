@@ -46,7 +46,7 @@
   font-weight: 700;
 }
 
-/* Logout style remains consistent */
+/* Logout style remains consistent 
 .logout-link {
   background: none;
   border: none;
@@ -54,11 +54,13 @@
   color: inherit;
   cursor: pointer;
 }
+*/
 
 /* Mobile adjustments */
 @media (max-width: 650px) {
   .nav-link {
     font-size: 0.85rem;
     padding: 0.4rem 0.75rem;
+    width: 100px;
   }
 }

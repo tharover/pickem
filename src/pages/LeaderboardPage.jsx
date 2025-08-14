@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import LeaderboardHeader from '../components/leaderboard/LeaderboardHeader';
 import PlayerPanel from '../components/leaderboard/PlayerPanel';
 import GamePanel from '../components/leaderboard/GamePanel';
 import useLeaderboardData from '../components/leaderboard/useLeaderboardData';
 import Toast from '../components/Toast'; // Assuming you have this component
+import StickyFooter from '../components/StickyFooter';
 import '../styles/Leaderboard.css';
 
 export default function LeaderboardPage() {
@@ -21,12 +21,9 @@ export default function LeaderboardPage() {
         <Toast message={toast.message} type={toast.type} onClose={clearToast} />
       )}
 
-      <LeaderboardHeader
-        year={data?.year}
-        week={data?.week}
-        status={status}
-        onRefresh={refresh}
-      />
+      <div className="leaderboard-header">
+        <h2>🏆 Leaderboard{data?.year && data?.week ? `: ${data?.year}, Week ${data?.week}` : ''}</h2>
+      </div>
 
       {status === 'loading' || status === 'refreshing' ? (
         <div className="loading-skeleton">
@@ -49,6 +46,15 @@ export default function LeaderboardPage() {
           <GamePanel
             games={data.games}
           />
+          <StickyFooter>
+              <button
+                onClick={refresh}
+                className="refresh-button"
+                disabled={status === 'refreshing'}
+              >
+                {status === 'refreshing' ? 'Refreshing...' : 'Refresh'}
+              </button>
+          </StickyFooter>
         </>
       )}
     </div>

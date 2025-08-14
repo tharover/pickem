@@ -1,0 +1,210 @@
+{
+    "status": "success",
+    "code": 200,
+    "message": "Leaderboard with all players",
+    "timestamp": 1755120906775,
+    "year": 2025,
+    "week": 1,
+    "data": {
+        "year": 2025,
+        "week": 1,
+        "games": {
+            "401752670": {
+                "gameId": 401752670,
+                "gameTime": "8/30/2025, 12:45:00 PM",
+                "home": "Kentucky",
+                "homeConference": "SEC",
+                "away": "Toledo",
+                "awayConference": "Mid-American",
+                "homeScore": "",
+                "awayScore": "",
+                "homeSpread": -8.5,
+                "awaySpread": 8.5,
+                "overUnder": 48.5,
+                "homePoints": "TBD",
+                "awayPoints": "TBD",
+                "over": "TBD",
+                "under": "TBD"
+            },
+            "401752671": {
+                "gameId": 401752671,
+                "gameTime": "8/30/2025, 7:30:00 PM",
+                "home": "Clemson",
+                "homeConference": "ACC",
+                "away": "LSU",
+                "awayConference": "SEC",
+                "homeScore": "",
+                "awayScore": "",
+                "homeSpread": -4.5,
+                "awaySpread": 4.5,
+                "overUnder": 57.5,
+                "homePoints": "TBD",
+                "awayPoints": "TBD",
+                "over": "TBD",
+                "under": "TBD"
+            },
+            "401752676": {
+                "gameId": 401752676,
+                "gameTime": "8/30/2025, 12:00:00 PM",
+                "home": "Syracuse",
+                "homeConference": "ACC",
+                "away": "Tennessee",
+                "awayConference": "SEC",
+                "homeScore": "",
+                "awayScore": "",
+                "homeSpread": -14.5,
+                "awaySpread": 14.5,
+                "overUnder": 50.5,
+                "homePoints": "TBD",
+                "awayPoints": "TBD",
+                "over": "TBD",
+                "under": "TBD"
+            },
+            "401752677": {
+                "gameId": 401752677,
+                "gameTime": "8/30/2025, 12:00:00 PM",
+                "home": "Ohio State",
+                "homeConference": "Big Ten",
+                "away": "Texas",
+                "awayConference": "SEC",
+                "homeScore": "",
+                "awayScore": "",
+                "homeSpread": -2.5,
+                "awaySpread": 2.5,
+                "overUnder": 48.5,
+                "homePoints": "TBD",
+                "awayPoints": "TBD",
+                "over": "TBD",
+                "under": "TBD"
+            },
+            "401752796": {
+                "gameId": 401752796,
+                "gameTime": "8/28/2025, 9:00:00 PM",
+                "home": "Cincinnati",
+                "homeConference": "Big 12",
+                "away": "Nebraska",
+                "awayConference": "Big Ten",
+                "homeScore": "",
+                "awayScore": "",
+                "homeSpread": 6.5,
+                "awaySpread": -6.5,
+                "overUnder": 51.5,
+                "homePoints": "TBD",
+                "awayPoints": "TBD",
+                "over": "TBD",
+                "under": "TBD"
+            },
+            "401754522": {
+                "gameId": 401754522,
+                "gameTime": "8/31/2025, 7:30:00 PM",
+                "home": "Miami",
+                "homeConference": "ACC",
+                "away": "Notre Dame",
+                "awayConference": "FBS Independents",
+                "homeScore": "",
+                "awayScore": "",
+                "homeSpread": 2.5,
+                "awaySpread": -2.5,
+                "overUnder": 50.5,
+                "homePoints": "TBD",
+                "awayPoints": "TBD",
+                "over": "TBD",
+                "under": "TBD"
+            },
+            "401762791": {
+                "gameId": 401762791,
+                "gameTime": "8/28/2025, 9:00:00 PM",
+                "home": "Wisconsin",
+                "homeConference": "Big Ten",
+                "away": "Miami (OH)",
+                "awayConference": "Mid-American",
+                "homeScore": "",
+                "awayScore": "",
+                "homeSpread": -17.5,
+                "awaySpread": 17.5,
+                "overUnder": 39.5,
+                "homePoints": "TBD",
+                "awayPoints": "TBD",
+                "over": "TBD",
+                "under": "TBD"
+            }
+        },
+        "leaderboard": [
+            {
+                "first": "TM",
+                "last": "Harover",
+                "email": "tharover@gmail.com",
+                "picks": [
+                    {
+                        "gameId": 401752671,
+                        "pick": "Under",
+                        "timestamp": "2025-08-13T10:39:42.608Z"
+                    },
+                    {
+                        "gameId": 401754522,
+                        "pick": "Under",
+                        "timestamp": "2025-08-13T10:39:42.608Z"
+                    },
+                    {
+                        "gameId": 401752796,
+                        "pick": "Over",
+                        "timestamp": "2025-07-18T17:14:20.297Z"
+                    },
+                    {
+                        "gameId": 401752677,
+                        "pick": "Over",
+                        "timestamp": "2025-07-18T17:14:20.297Z"
+                    }
+                ]
+            },
+            {
+                "first": "Jack",
+                "last": "Harover",
+                "email": "jackharover@gmail.com",
+                "picks": []
+            },
+            {
+                "first": "Ryan",
+                "last": "Smith",
+                "email": "smithryan544@gmail.com",
+                "picks": []
+            },
+            {
+                "first": "Carter",
+                "last": "Jones",
+                "email": "carter.jones777@gmail.com",
+                "picks": []
+            },
+            {
+                "first": "Sam",
+                "last": "Williamson",
+                "email": "sammyhw1@gmail.com",
+                "picks": []
+            },
+            {
+                "first": "Scott",
+                "last": "Jones",
+                "email": "weasels333@gmail.com",
+                "picks": []
+            },
+            {
+                "first": "Andrew",
+                "last": "Douglas",
+                "email": "tdouglas6250@icloud.com",
+                "picks": []
+            },
+            {
+                "first": "TJ",
+                "last": "Jones",
+                "email": "tyler.jones2424@gmail.com",
+                "picks": []
+            },
+            {
+                "first": "Dylan",
+                "last": "Jones",
+                "email": "obulldogs222@gmail.com",
+                "picks": []
+            }
+        ]
+    }
+}

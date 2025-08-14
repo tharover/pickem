@@ -1,5 +1,6 @@
 import React from 'react';
 import { calculatePoints } from '../../utils/leaderboardUtils';
+import { StorageKeys, storageUtils } from '../../utils/storageUtils';
 
 export default function PlayerRow({ player, games, now, expandedUser, setExpandedUser }) {
   const isExpanded = expandedUser === player.email;
@@ -27,7 +28,7 @@ export default function PlayerRow({ player, games, now, expandedUser, setExpande
         onClick={() => setExpandedUser(isExpanded ? null : player.email)}
         style={{ cursor: 'pointer' }}
       >
-        <td>{player.email} ({player.first})</td>
+        <td>{player.first}</td>
         <td>{totalPoints}</td>
         <td>{isExpanded ? '▲' : '▼'}</td>
       </tr>
@@ -41,17 +42,23 @@ export default function PlayerRow({ player, games, now, expandedUser, setExpande
                   {results.length > 0 ? results.map(r => {
                     const gameTime = new Date(r.gameTime);
                     const hasStarted = gameTime <= now;
-                    const pickDisplay = hasStarted ? `${r.pick} (${r.points} pts)` : '🔒 Hidden until kickoff';
-
+                    console.log(`Comparing email: ${player.email} with stored email: ${storageUtils.get(StorageKeys.EMAIL)}`);
+                    // Check if the user is logged in by comparing the email with the stored email
+                    const isLoggedIn = player.email === storageUtils.get(StorageKeys.EMAIL);
+                    console.log(`User is ${isLoggedIn ? 'logged in' : 'not logged in'}`);
+                    const pickDisplay = (hasStarted || isLoggedIn) ? `${r.pick} (${r.points} pts)` : '🔒 Hidden until kickoff';
                     return (
                       <React.Fragment key={`result-${player.email}-${r.gameId}`}>
                         <tr className="desktop-row detail-row">
                           <td>{r.matchup}</td>
                           <td>{r.points}</td>
-                          <td>{hasStarted ? r.pick : '🔒 Hidden until kickoff'}</td>
+                          <td>{pickDisplay}</td>
                         </tr>
                         <tr className="mobile-row mobile-matchup-row detail-row">
                           <td colSpan="3"><strong>{r.matchup}</strong></td>
+                        </tr>
+                        <tr className="mobile-row detail-row">
+                          <td colSpan="3"><strong>Points: </strong> {r.points}</td>
                         </tr>
                         <tr className="mobile-row detail-row">
                           <td colSpan="3"><strong>Pick: </strong> {pickDisplay}</td>

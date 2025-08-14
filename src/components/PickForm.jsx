@@ -338,7 +338,7 @@ const PickForm = ({ games, setGames, year, setYear, week, setWeek }) => {
 
                 </form>
             </div>
-            <div className="sticky-submit">
+            <div className="sticky-footer">
                 <button type="submit" onClick={handleSubmit} disabled={submitting || allGamesLocked} className="submit-button">
                     {submitting ? '📤 Submitting...' : 'Submit'}
                 </button>

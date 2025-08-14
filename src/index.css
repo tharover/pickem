@@ -58,6 +58,7 @@ button:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
+
 button:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
@@ -83,4 +84,41 @@ button.clear-button {
 button.refresh-button {
   background: #28a745;
   color: white;
+}
+
+/* --- Sticky Footer --- */
+.sticky-footer {
+  position: fixed;
+  width: 100%;
+  margin-bottom: 1rem;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 1rem;
+  margin: 0 auto;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  gap: 0 1rem;
+  z-index: 1000;
+}
+
+@media (max-width: 376px) {
+  .sticky-footer {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+@media (min-width: 375px) {
+
+  .sticky-footer button {
+    width: 120px;
+    font-size: .85rem;
+  }
+
+  .pick-form-wrapper {
+    font-size: smaller;
+  }
 }

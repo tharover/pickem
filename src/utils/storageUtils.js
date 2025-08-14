@@ -7,6 +7,7 @@ export const StorageKeys = {
     PICKS: 'picks',
     GAMES: 'games',
     LEADERBOARD: 'leaderboard',
+    LEADERBOARD_TIMESTAMP: 'leaderboard_timestamp',
     WEEK: 'week',
     YEAR: 'year'
 };

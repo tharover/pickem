@@ -18,7 +18,7 @@ export default function PlayerPanel({ leaderboard, games }) {
             <table className="leaderboard-table">
                 <thead>
                     <tr>
-                        <th>Email</th>
+                        <th>Player</th>
                         <th>Total Points</th>
                         <th>▼</th>
                     </tr>

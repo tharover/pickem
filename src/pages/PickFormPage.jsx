@@ -45,7 +45,8 @@ const PickFormPage = () => {
       if (cached) {
         const { games, timestamp } = JSON.parse(cached);
         const now = Date.now();
-        if (now - timestamp < 15 * 60 * 1000) {
+        // If cached data is less than 1 hour old, use it
+        if (now - timestamp < 60 * 60 * 1000) {
           console.log('Using cached game data');
           setGames(games || []);
           setLoading(false);

@@ -10,8 +10,7 @@
 
 .form-title,
 .form-instructions,
-.email-card,
-.sticky-submit {
+.email-card{
   width: 100%;
   margin-bottom: 1rem;
 }
@@ -143,36 +142,9 @@
   margin-top: 0.5rem;
 }
 
-/* --- Sticky Submit Button --- */
-.sticky-submit {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background: white;
-  padding: 1rem;
-  margin: 0 auto;
-  border-top: 1px solid #ccc;
-  display: flex;
-  justify-content: center;
-  gap: 0 1rem;
-  z-index: 1000;
-}
-
 /* Button Styles */
 
-@media (max-width: 376px) {
-  .sticky-submit {
-    flex-direction: column;
-    align-items: stretch;
-  }
-}
-
 @media (min-width: 375px) {
-
-  .sticky-submit button {
-    width: 180px
-  }
 
   .pick-form-wrapper  {
     font-size: smaller;
