@@ -152,7 +152,7 @@ export default function useLeaderboardData({ navigate, setToast }) {
 
   const refresh = async () => {
     setStatus('refreshing');
-    await loadData();
+    await loadData(true);
   };
 
   return { data, status, refresh };
