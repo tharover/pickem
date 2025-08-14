@@ -1,7 +1,26 @@
-# Getting Started with Create React App
+# College Football Pick 'em app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React app that works in conjunction with a Google Sheet to run a College Football pick contest.  The contest works like this:
+* Administrators select games for the contest at the start of each week.  Generally marquee matchups are selected.
+* Players submit their picks via this app on the "Picks" page.
+* Those picks are recorded in the Google Sheet and reflected on the Leaderboard tab in the app.
+* On game days, the scores will be updated automatically and players can check the Leaderboard for their latest points.
 
+Points are awarded as follows:
+* Each game pick is one of the following:  HOME, AWAY, OVER, UNDER
+* Points are awarded if your pick beats the associated spread or over / under.
+* Example matchup:  Ohio State (-14.5) @ Michigan (14.5) with O/U of 43.5
+* Scenario 1:  Ohio State wins 55-3.  If you picked AWAY, you covered the spread by 52 - 14.5 and would get 37.5 points.
+* Scenario 2:  Michigan wins 21-20.  If you picked UNDER, you covered the O/U by 43.5 - 41 and would get 1.5 points.
+* Scenario 2:  Ohio State wins 17-14.  If you picked AWAY, you DID NOT cover the 14.5 spread and get 0 points.
+
+General command flow to deploy changes
+* git add . // adds any new files created
+* git commit -m "Change description"
+* git push
+* npm run deploy
+
+# React info for reference
 ## Available Scripts
 
 In the project directory, you can run:
