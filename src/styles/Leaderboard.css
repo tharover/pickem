@@ -215,6 +215,7 @@
   }
 
   .leaderboard-table .mobile-row td {
+    text-wrap: auto;
     font-size: 0.95rem;
     border-top: none;
     border-bottom: none;

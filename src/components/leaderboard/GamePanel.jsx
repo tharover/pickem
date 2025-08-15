@@ -32,7 +32,7 @@ export default function GamePanel({ games }) {
 
                 <tr className="mobile-row detail-row">
                   <td colSpan="5">
-                    <strong>{g.away} ({g.awaySpread}) @ {g.home} ({g.homeSpread})</strong><br />
+                    <strong>{g.away}</strong> ({g.awaySpread}) @ <strong>{g.home}</strong> ({g.homeSpread})<br />
                     <strong>Score:</strong> {g.awayScore} - {g.homeScore}<br />
                     <strong>Away Pts:</strong> {g.awayPoints}<br />
                     <strong>Home Pts:</strong> {g.homePoints}<br />
