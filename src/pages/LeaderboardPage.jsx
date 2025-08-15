@@ -13,12 +13,14 @@ export default function LeaderboardPage() {
 
   const { data, status, refresh } = useLeaderboardData({ navigate, setToast });
 
-  const clearToast = () => setToast({ message: '', type: '' });
-
   return (
     <div className="leaderboard-wrapper">
       {toast.message && (
-        <Toast message={toast.message} type={toast.type} onClose={clearToast} />
+        <Toast
+          message={toast.message}
+          type={toast.type}
+          onDismiss={() => setToast({ message: '', type: '' })}
+        />
       )}
 
       <div className="leaderboard-header">
@@ -47,13 +49,13 @@ export default function LeaderboardPage() {
             games={data.games}
           />
           <StickyFooter>
-              <button
-                onClick={refresh}
-                className="refresh-button"
-                disabled={status === 'refreshing'}
-              >
-                {status === 'refreshing' ? 'Refreshing...' : 'Refresh'}
-              </button>
+            <button
+              onClick={refresh}
+              className="refresh-button"
+              disabled={status === 'refreshing'}
+            >
+              {status === 'refreshing' ? 'Refreshing...' : 'Refresh'}
+            </button>
           </StickyFooter>
         </>
       )}

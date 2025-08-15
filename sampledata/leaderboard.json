@@ -1,0 +1,200 @@
+[
+    {
+        "first": "TM",
+        "last": "Harover",
+        "email": "tharover@gmail.com",
+        "picks": [
+            {
+                "gameId": 401752812,
+                "pick": "Away",
+                "timestamp": "2025-08-01T04:00:00.000Z"
+            },
+            {
+                "gameId": 401752817,
+                "pick": "Away",
+                "timestamp": "2025-08-01T04:00:00.000Z"
+            },
+            {
+                "gameId": 401752826,
+                "pick": "Away",
+                "timestamp": "2025-08-01T04:00:00.000Z"
+            }
+        ]
+    },
+    {
+        "first": "Jack",
+        "last": "Harover",
+        "email": "jackharover@gmail.com",
+        "picks": [
+            {
+                "gameId": 401752812,
+                "pick": "Home",
+                "timestamp": "2025-08-01T04:00:00.000Z"
+            },
+            {
+                "gameId": 401752817,
+                "pick": "Home",
+                "timestamp": "2025-08-01T04:00:00.000Z"
+            },
+            {
+                "gameId": 401752826,
+                "pick": "Home",
+                "timestamp": "2025-08-01T04:00:00.000Z"
+            }
+        ]
+    },
+    {
+        "first": "Ryan",
+        "last": "Smith",
+        "email": "smithryan544@gmail.com",
+        "picks": [
+            {
+                "gameId": 401752812,
+                "pick": "Over",
+                "timestamp": "2025-08-01T04:00:00.000Z"
+            },
+            {
+                "gameId": 401752817,
+                "pick": "Over",
+                "timestamp": "2025-08-01T04:00:00.000Z"
+            },
+            {
+                "gameId": 401752826,
+                "pick": "Over",
+                "timestamp": "2025-08-01T04:00:00.000Z"
+            }
+        ]
+    },
+    {
+        "first": "Carter",
+        "last": "Jones",
+        "email": "carter.jones777@gmail.com",
+        "picks": [
+            {
+                "gameId": 401752812,
+                "pick": "NO PICK",
+                "timestamp": ""
+            },
+            {
+                "gameId": 401752817,
+                "pick": "NO PICK",
+                "timestamp": ""
+            },
+            {
+                "gameId": 401752826,
+                "pick": "NO PICK",
+                "timestamp": ""
+            }
+        ]
+    },
+    {
+        "first": "Sam",
+        "last": "Williamson",
+        "email": "sammyhw1@gmail.com",
+        "picks": [
+            {
+                "gameId": 401752812,
+                "pick": "NO PICK",
+                "timestamp": ""
+            },
+            {
+                "gameId": 401752817,
+                "pick": "NO PICK",
+                "timestamp": ""
+            },
+            {
+                "gameId": 401752826,
+                "pick": "NO PICK",
+                "timestamp": ""
+            }
+        ]
+    },
+    {
+        "first": "Scott",
+        "last": "Jones",
+        "email": "weasels333@gmail.com",
+        "picks": [
+            {
+                "gameId": 401752812,
+                "pick": "NO PICK",
+                "timestamp": ""
+            },
+            {
+                "gameId": 401752817,
+                "pick": "NO PICK",
+                "timestamp": ""
+            },
+            {
+                "gameId": 401752826,
+                "pick": "NO PICK",
+                "timestamp": ""
+            }
+        ]
+    },
+    {
+        "first": "Andrew",
+        "last": "Douglas",
+        "email": "tdouglas6250@icloud.com",
+        "picks": [
+            {
+                "gameId": 401752812,
+                "pick": "NO PICK",
+                "timestamp": ""
+            },
+            {
+                "gameId": 401752817,
+                "pick": "NO PICK",
+                "timestamp": ""
+            },
+            {
+                "gameId": 401752826,
+                "pick": "NO PICK",
+                "timestamp": ""
+            }
+        ]
+    },
+    {
+        "first": "TJ",
+        "last": "Jones",
+        "email": "tyler.jones2424@gmail.com",
+        "picks": [
+            {
+                "gameId": 401752812,
+                "pick": "NO PICK",
+                "timestamp": ""
+            },
+            {
+                "gameId": 401752817,
+                "pick": "NO PICK",
+                "timestamp": ""
+            },
+            {
+                "gameId": 401752826,
+                "pick": "NO PICK",
+                "timestamp": ""
+            }
+        ]
+    },
+    {
+        "first": "Dylan",
+        "last": "Jones",
+        "email": "obulldogs222@gmail.com",
+        "picks": [
+            {
+                "gameId": 401752812,
+                "pick": "NO PICK",
+                "timestamp": ""
+            },
+            {
+                "gameId": 401752817,
+                "pick": "NO PICK",
+                "timestamp": ""
+            },
+            {
+                "gameId": 401752826,
+                "pick": "NO PICK",
+                "timestamp": ""
+            }
+        ]
+    }
+]

@@ -11,10 +11,10 @@ export default function GamePanel({ games }) {
         <thead>
           <tr className="desktop-row">
             <th>Matchup</th>
-            <th>Home</th>
-            <th>Away</th>
-            <th>Over</th>
-            <th>Under</th>
+            <th>Score</th>
+            <th>Away Pts</th>
+            <th>Home Pts</th>
+            <th>O/U</th>
           </tr>
         </thead>
         <tbody>
@@ -23,26 +23,21 @@ export default function GamePanel({ games }) {
             return (
               <React.Fragment key={`game-${gameId}`}>
                 <tr className="desktop-row">
-                  <td><strong>{g.away} @ {g.home}</strong></td>
-                  <td>{g.homePoints}</td>
+                  <td><strong>{g.away} ({g.awaySpread}) @ {g.home} ({g.homeSpread})</strong></td>
+                  <td>{g.awayScore} - {g.homeScore}</td>
                   <td>{g.awayPoints}</td>
-                  <td>{g.over}</td>
-                  <td>{g.under}</td>
+                  <td>{g.homePoints}</td>
+                  <td>{g.over} / {g.under}</td>
                 </tr>
-                <tr className="mobile-row mobile-matchup-row detail-row">
-                  <td colSpan="5"><strong>{g.away} @ {g.home}</strong></td>
-                </tr>
+
                 <tr className="mobile-row detail-row">
-                  <td colSpan="5"><strong>Home:</strong> {g.homePoints}</td>
-                </tr>
-                <tr className="mobile-row detail-row">
-                  <td colSpan="5"><strong>Away:</strong> {g.awayPoints}</td>
-                </tr>
-                <tr className="mobile-row detail-row">
-                  <td colSpan="5"><strong>Over:</strong> {g.over}</td>
-                </tr>
-                <tr className="mobile-row detail-row">
-                  <td colSpan="5"><strong>Under:</strong> {g.under}</td>
+                  <td colSpan="5">
+                    <strong>{g.away} ({g.awaySpread}) @ {g.home} ({g.homeSpread})</strong><br />
+                    <strong>Score:</strong> {g.awayScore} - {g.homeScore}<br />
+                    <strong>Away Pts:</strong> {g.awayPoints}<br />
+                    <strong>Home Pts:</strong> {g.homePoints}<br />
+                    <strong>O/U:</strong> {g.over} / {g.under}
+                  </td>
                 </tr>
               </React.Fragment>
             );

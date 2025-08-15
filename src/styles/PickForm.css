@@ -150,3 +150,12 @@
     font-size: smaller;
   }
 }
+
+.user-row.missing-pick {
+  background-color: #fff3cd; /* soft yellow */
+  border-left: 4px solid #ffc107;
+}
+
+.user-row.missing-pick:hover {
+  background-color: #ffe8a1;
+}

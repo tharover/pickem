@@ -18,17 +18,19 @@ export default function PlayerRow({ player, games, now, expandedUser, setExpande
       gameTime: game.gameTime
     };
   }).filter(Boolean);
+  console.log(`Results for ${player.email}:`, results);
 
   const totalPoints = results.reduce((sum, r) => sum + (typeof r.points === 'number' ? r.points : 0), 0);
+  const hasMissingPick = player.picks.some(p => p.pick === 'NO PICK');
 
   return (
     <React.Fragment>
       <tr
-        className="user-row"
+        className={`user-row ${hasMissingPick ? 'missing-pick' : ''}`}
         onClick={() => setExpandedUser(isExpanded ? null : player.email)}
         style={{ cursor: 'pointer' }}
       >
-        <td>{player.first}</td>
+        <td>{player.first} {hasMissingPick && <span title="Missing pick!" style={{ float: 'right' }}>⚠️</span>}</td>
         <td>{totalPoints}</td>
         <td>{isExpanded ? '▲' : '▼'}</td>
       </tr>
@@ -42,11 +44,10 @@ export default function PlayerRow({ player, games, now, expandedUser, setExpande
                   {results.length > 0 ? results.map(r => {
                     const gameTime = new Date(r.gameTime);
                     const hasStarted = gameTime <= now;
-                    console.log(`Comparing email: ${player.email} with stored email: ${storageUtils.get(StorageKeys.EMAIL)}`);
-                    // Check if the user is logged in by comparing the email with the stored email
                     const isLoggedIn = player.email === storageUtils.get(StorageKeys.EMAIL);
+                    const isNoPick = r.pick === 'NO PICK';
                     console.log(`User is ${isLoggedIn ? 'logged in' : 'not logged in'}`);
-                    const pickDisplay = (hasStarted || isLoggedIn) ? `${r.pick} (${r.points} pts)` : '🔒 Hidden until kickoff';
+                    const pickDisplay = (hasStarted || isLoggedIn || isNoPick) ? `${r.pick} (${r.points} pts)` : '🔒 Hidden until kickoff';
                     return (
                       <React.Fragment key={`result-${player.email}-${r.gameId}`}>
                         <tr className="desktop-row detail-row">
