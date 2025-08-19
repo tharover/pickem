@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { fetchGameData } from '../utils/useGameFetcher';
 import Toast from '../components/Toast';
-import { PROXY_URL } from '../config';
 import '../styles/PickForm.css';
 import { StorageKeys, storageUtils } from '../utils/storageUtils';
 import { ProxyFunctions, proxyRequest } from '../utils/proxy';
@@ -26,6 +24,15 @@ const PickForm = ({ games, setGames, year, setYear, week, setWeek }) => {
         setCurrentPicks(initial);
     }, [games]);
 
+    // ***********************************************************************
+    // Normalize games data to ensure consistent structure
+    // Handles both array and object formats
+    // ***********************************************************************
+    function normalizeGames(gamesData) {
+        return Array.isArray(gamesData)
+            ? gamesData
+            : Object.values(gamesData || {});
+    }
 
     // ***********************************************************************
     // Handle refreshing form
@@ -69,16 +76,18 @@ const PickForm = ({ games, setGames, year, setYear, week, setWeek }) => {
             storageUtils.set(StorageKeys.WEEK, response.week);
 
             // Update state with fresh data
-            setGames(data.games || []);
+            const normalized = normalizeGames(data.games);
+            setGames(normalized);
             setYear(response.year || null);
             setWeek(response.week || null);
             setCurrentPicks(() => {
                 const initial = {};
-                data.games.forEach(game => {
+                normalized.forEach(game => {
                     if (game.userPick) initial[game.gameId] = game.userPick;
                 });
                 return initial;
             });
+
             setToast({ message: 'Your picks were refreshed.', type: 'success' });
 
         } catch (err) {
@@ -149,6 +158,7 @@ const PickForm = ({ games, setGames, year, setYear, week, setWeek }) => {
             };
         });
 
+
         const tokenRaw = storageUtils.get(StorageKeys.TOKEN);
         const token = tokenRaw ? JSON.parse(tokenRaw) : null;
         const email = storageUtils.get(StorageKeys.EMAIL);
@@ -167,23 +177,33 @@ const PickForm = ({ games, setGames, year, setYear, week, setWeek }) => {
             const response = await proxyRequest(ProxyFunctions.SUBMIT_WEEKLY_PICKS, payload);
 
             if (response.status === 'success') {
-                setToast({ message: '✅ Picks submitted successfully!', type: 'success' });
-                setSubmitStatus('✅ Picks submitted successfully!');
-                storageUtils.remove(StorageKeys.GAMES);
+                const { validPicks, errors, summary, games: updatedGames } = response.data || {};
+                const normalized = normalizeGames(updatedGames);
 
-                setToast({ message: `Updating game data...`, type: 'info' });
-
-                setGames(response.data?.games || []);
-                setCurrentPicks(() => {
-                    const initial = {};
-                    response.data?.games.forEach(game => {
-                        if (game.userPick) initial[game.gameId] = game.userPick;
-                    });
-                    return initial;
+                // Merge valid picks into normalized games
+                validPicks?.forEach(pick => {
+                    const game = normalized.find(g => g.gameId === pick.gameId);
+                    if (game) {
+                        game.userPick = pick.pick;
+                        game.userPickTimestamp = new Date().toISOString(); // or use server timestamp if available
+                    }
                 });
+
+                setGames(normalized);
+
+                // Update current picks with accepted ones
+                const acceptedMap = {};
+                validPicks?.forEach(p => {
+                    acceptedMap[p.gameId] = p.pick;
+                });
+                setCurrentPicks(acceptedMap);
+
+                // ✅ Update year/week
                 setYear(response.year || null);
                 setWeek(response.week || null);
-                setToast({ message: `Games reloaded!`, type: 'info' });
+
+                // ✅ Clear cached games
+                storageUtils.remove(StorageKeys.GAMES);
             } else {
                 setToast({ message: `❌ Submission failed: ${response.message}`, type: 'error' });
                 setSubmitStatus(`❌ Submission failed: ${response.message}`);
@@ -201,9 +221,9 @@ const PickForm = ({ games, setGames, year, setYear, week, setWeek }) => {
     // ***********************************************************************
     // Helper function to format ISO date string to local time
     // ***********************************************************************
-    const formatGameDate = (iso) => {
-        const date = new Date(iso);
-        return date.toLocaleString('en-US', {
+    const formatGameDate = (dateStr) => {
+        const date = new Date(dateStr);
+        return isNaN(date.getTime()) ? 'Invalid date' : date.toLocaleString('en-US', {
             timeZone: 'America/New_York',
             month: 'short',
             day: 'numeric',
@@ -212,6 +232,7 @@ const PickForm = ({ games, setGames, year, setYear, week, setWeek }) => {
             hour12: true
         });
     };
+
 
     // ***********************************************************************
     // Helper function to format spread values
@@ -271,6 +292,12 @@ const PickForm = ({ games, setGames, year, setYear, week, setWeek }) => {
                                     <h4>Game {index + 1}: {formatGameDate(game.gameTime)}</h4>
                                 </div>
 
+                                {isLocked && (
+                                    <p className="game-warning">
+                                        ⚠️ This game is currently in progress. Picks are disabled.
+                                    </p>
+                                )}
+
                                 {/* Matchup Info */}
                                 <div className="game-info">
                                     <p className='Away'>Away: <b>{game.away}</b> ({formatSpread(game.awaySpread)})</p>
@@ -303,6 +330,7 @@ const PickForm = ({ games, setGames, year, setYear, week, setWeek }) => {
                                                         value={option}
                                                         className="radio-input"
                                                         checked={isCurrent}
+                                                        disabled={isLocked || submitting || refreshing}
                                                         onChange={() =>
                                                             setCurrentPicks(prev => ({ ...prev, [game.gameId]: option }))
                                                         }
@@ -319,14 +347,7 @@ const PickForm = ({ games, setGames, year, setYear, week, setWeek }) => {
                                 <div className="game-pick-info">
                                     {game.userPick && game.userPickTimestamp ? (
                                         <p>
-                                            🕒 Pick submitted: {new Date(game.userPickTimestamp).toLocaleString('en-US', {
-                                                timeZone: 'America/New_York',
-                                                month: 'short',
-                                                day: 'numeric',
-                                                hour: 'numeric',
-                                                minute: '2-digit',
-                                                hour12: true
-                                            })}
+                                            🕒 Pick submitted: {formatGameDate(game.userPickTimestamp)}
                                         </p>
                                     ) : (
                                         <p style={{ fontStyle: 'italic', color: '#888' }}>No pick submitted yet.</p>
