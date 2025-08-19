@@ -1,0 +1,88 @@
+{
+    "status": "success",
+    "code": 200,
+    "message": "Selected games loaded",
+    "timestamp": 1755442072176,
+    "year": 2025,
+    "week": 2,
+    "data": {
+        "games": [
+            {
+                "gameId": 401752812,
+                "raw": [
+                    2025,
+                    2,
+                    401752812,
+                    "2025-09-06T16:00:00.000Z",
+                    "Indiana",
+                    "Big Ten",
+                    "Kennesaw State",
+                    "Conference USA",
+                    "",
+                    "",
+                    "2025-08-15T12:21:09.000Z",
+                    -13.5,
+                    13.5,
+                    53.5,
+                    "TBD",
+                    "TBD",
+                    "TBD",
+                    "TBD"
+                ],
+                "userPick": "Home",
+                "userPickTimestamp": "2025-08-17T14:43:18.186Z"
+            },
+            {
+                "gameId": 401752817,
+                "raw": [
+                    2025,
+                    2,
+                    401752817,
+                    "2025-08-17T12:00:00.000Z",
+                    "Northwestern",
+                    "Big Ten",
+                    "Western Illinois",
+                    "Big South-OVC",
+                    7,
+                    16,
+                    "2025-08-15T12:21:09.000Z",
+                    4.5,
+                    -4.5,
+                    33.5,
+                    0,
+                    4.5,
+                    0,
+                    10.5
+                ],
+                "userPick": "Away",
+                "userPickTimestamp": "2025-08-01T04:00:00.000Z"
+            },
+            {
+                "gameId": 401752826,
+                "raw": [
+                    2025,
+                    2,
+                    401752826,
+                    "2025-09-05T23:30:00.000Z",
+                    "Maryland",
+                    "Big Ten",
+                    "Northern Illinois",
+                    "Mid-American",
+                    "",
+                    "",
+                    "2025-08-15T12:21:09.000Z",
+                    7.5,
+                    -7.5,
+                    43.5,
+                    "TBD",
+                    "TBD",
+                    "TBD",
+                    "TBD"
+                ],
+                "userPick": "Home",
+                "userPickTimestamp": "2025-08-17T14:43:18.186Z"
+            }
+        ],
+        "timestamp": 1755442071894
+    }
+}

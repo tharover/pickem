@@ -1,0 +1,23 @@
+{
+  "status": "success",
+  "code": 200,
+  "message": "Picks for tharover@gmail.com processed: 2 accepted, 1 rejected.",
+  "timestamp": "...",
+  "year": 2025,
+  "week": 1,
+  "data": {
+    "games": [...],
+    "validPicks": [
+      { "gameId": "401752825", "pick": "OHIO" },
+      { "gameId": "401752827", "pick": "MIAMI" }
+    ],
+    "errors": [
+      "Pick for LSU vs TEXAS (Game ID 401752826) was submitted after kickoff (Aug 14, 2025, 3:30 PM)."
+    ],
+    "summary": {
+      "accepted": 2,
+      "rejected": 1,
+      "totalSubmitted": 3
+    }
+  }
+}
