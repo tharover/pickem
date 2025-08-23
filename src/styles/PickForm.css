@@ -37,7 +37,6 @@
 .game-header {
   font-size: larger;
   font-weight: 600;
-  margin-bottom: 0.5rem;
   border-bottom: 1px solid #ddd;
   padding-bottom: 0.5rem;
   color: #333;
@@ -46,6 +45,20 @@
 .game-info p {
   margin: 0.5rem 0;
   font-size: larger;
+}
+
+.locked .game-warning {
+  color:  white;
+  text-align: center;
+  font-weight: 600;
+  padding: 0.5rem;
+  background-color: #990000;
+  margin: 0;;
+}
+
+.locked .game-picks {
+  opacity: 0.6;
+  pointer-events: none;
 }
 
 /* --- Responsive Columns --- 

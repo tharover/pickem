@@ -47,7 +47,7 @@ export default function PlayerRow({ player, games, now, expandedUser, setExpande
                     const isLoggedIn = player.email === storageUtils.get(StorageKeys.EMAIL);
                     const isNoPick = r.pick === 'NO PICK';
                     console.log(`User is ${isLoggedIn ? 'logged in' : 'not logged in'}`);
-                    const pickDisplay = (hasStarted || isLoggedIn || isNoPick) ? `${r.pick} (${r.points} pts)` : '🔒 Hidden until kickoff';
+                    const pickDisplay = (hasStarted || isLoggedIn || isNoPick) ? `${r.pick} (${r.points} pts)` : '🔒 Kickoff';
                     return (
                       <React.Fragment key={`result-${player.email}-${r.gameId}`}>
                         <tr className="desktop-row detail-row">
