@@ -2,7 +2,7 @@ import React from 'react';
 import { calculatePoints } from '../../utils/leaderboardUtils';
 import { StorageKeys, storageUtils } from '../../utils/storageUtils';
 
-export default function PlayerRow({ player, games, now, expandedUser, setExpandedUser }) {
+export default function PlayerRow({ player, games, now, expandedUser, setExpandedUser, place }) {
   const isExpanded = expandedUser === player.email;
 
   const results = player.picks.map(pick => {
@@ -32,12 +32,17 @@ export default function PlayerRow({ player, games, now, expandedUser, setExpande
       >
         <td>{player.first} {hasMissingPick && <span title="Missing pick!" style={{ float: 'right' }}>⚠️</span>}</td>
         <td>{totalPoints}</td>
+        <td>
+          {place ? (
+            <span title={place.tooltip}>{place.icon}</span>
+          ) : ''}
+        </td>
         <td>{isExpanded ? '▲' : '▼'}</td>
       </tr>
 
       {isExpanded && (
         <tr>
-          <td colSpan="3" style={{ padding: 0 }}>
+          <td colSpan="4" style={{ padding: 0 }}>
             <div className="pick-details-wrapper open">
               <table className="inner-pick-table" cellSpacing="0" cellPadding="0" border={0} borderSpacing="0">
                 <tbody>

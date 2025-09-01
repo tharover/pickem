@@ -1,0 +1,5640 @@
+[
+    {
+        "id": 401752665,
+        "startDate": "2025-08-30T19:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": "ABC",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "4th & 16 at ALA 35",
+        "possession": "home",
+        "lastPlay": "TEAM run for a loss of 2 yards to the ALA 35",
+        "venue": {
+            "name": "Doak Campbell Stadium",
+            "city": "Tallahassee",
+            "state": "FL"
+        },
+        "homeTeam": {
+            "id": 52,
+            "name": "Florida State Seminoles",
+            "conference": "ACC",
+            "classification": "fbs",
+            "points": 31,
+            "lineScores": [
+                7,
+                10,
+                7,
+                7
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 333,
+            "name": "Alabama Crimson Tide",
+            "conference": "SEC",
+            "classification": "fbs",
+            "points": 17,
+            "lineScores": [
+                7,
+                0,
+                3,
+                7
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 82.4,
+            "description": "Thunderstorm",
+            "windSpeed": 8.1,
+            "windDirection": 216
+        },
+        "betting": {
+            "spread": 13.5,
+            "overUnder": 47,
+            "homeMoneyline": 400,
+            "awayMoneyline": -575
+        }
+    },
+    {
+        "id": 401752666,
+        "startDate": "2025-08-30T20:15:00.000Z",
+        "startTimeTBD": false,
+        "tv": "SEC Network",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "4th & 9 at AAMU 32",
+        "possession": "away",
+        "lastPlay": "Isaiah Nkokenkwo run for a loss of 2 yards to the AAMU 32",
+        "venue": {
+            "name": "Razorback Stadium",
+            "city": "Fayetteville",
+            "state": "AR"
+        },
+        "homeTeam": {
+            "id": 8,
+            "name": "Arkansas Razorbacks",
+            "conference": "SEC",
+            "classification": "fbs",
+            "points": 52,
+            "lineScores": [
+                10,
+                21,
+                14,
+                7
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2010,
+            "name": "Alabama A&M Bulldogs",
+            "conference": "SWAC",
+            "classification": "fcs",
+            "points": 7,
+            "lineScores": [
+                7,
+                0,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 76.1,
+            "description": null,
+            "windSpeed": 5.3,
+            "windDirection": 45
+        },
+        "betting": {
+            "spread": -48.5,
+            "overUnder": 65,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401752667,
+        "startDate": "2025-08-30T00:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "FOX",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "3rd & 2 at AUB 19",
+        "possession": "away",
+        "lastPlay": "Timeout Baylor, clock 01:04",
+        "venue": {
+            "name": "McLane Stadium",
+            "city": "Waco",
+            "state": "TX"
+        },
+        "homeTeam": {
+            "id": 239,
+            "name": "Baylor Bears",
+            "conference": "Big 12",
+            "classification": "fbs",
+            "points": 24,
+            "lineScores": [
+                3,
+                7,
+                7,
+                7
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2,
+            "name": "Auburn Tigers",
+            "conference": "SEC",
+            "classification": "fbs",
+            "points": 38,
+            "lineScores": [
+                7,
+                10,
+                14,
+                7
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 91,
+            "description": "Cloudy",
+            "windSpeed": 6.5,
+            "windDirection": 286
+        },
+        "betting": {
+            "spread": 1,
+            "overUnder": 56.5,
+            "homeMoneyline": -110,
+            "awayMoneyline": -110
+        }
+    },
+    {
+        "id": 401752668,
+        "startDate": "2025-08-30T23:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "3rd & 10 at LIU 25",
+        "possession": "away",
+        "lastPlay": "Chris Howell pass incomplete to Jayden Simpson",
+        "venue": {
+            "name": "Ben Hill Griffin Stadium",
+            "city": "Gainesville",
+            "state": "FL"
+        },
+        "homeTeam": {
+            "id": 57,
+            "name": "Florida Gators",
+            "conference": "SEC",
+            "classification": "fbs",
+            "points": 55,
+            "lineScores": [
+                14,
+                24,
+                10,
+                7
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2341,
+            "name": "Long Island University Sharks",
+            "conference": "NEC",
+            "classification": "fcs",
+            "points": 0,
+            "lineScores": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 79.2,
+            "description": null,
+            "windSpeed": 1.6,
+            "windDirection": 151
+        },
+        "betting": {
+            "spread": -47,
+            "overUnder": 56.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401752669,
+        "startDate": "2025-08-30T19:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": "ESPN",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "1st & 10 at MRSH 22",
+        "possession": "home",
+        "lastPlay": "Drew Miller punt for 46 yds, fair catch by Demarcus Lacey at the MRSH 22",
+        "venue": {
+            "name": "Sanford Stadium",
+            "city": "Athens",
+            "state": "GA"
+        },
+        "homeTeam": {
+            "id": 61,
+            "name": "Georgia Bulldogs",
+            "conference": "SEC",
+            "classification": "fbs",
+            "points": 45,
+            "lineScores": [
+                14,
+                10,
+                14,
+                7
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 276,
+            "name": "Marshall Thundering Herd",
+            "conference": "Sun Belt",
+            "classification": "fbs",
+            "points": 7,
+            "lineScores": [
+                0,
+                0,
+                0,
+                7
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 69.8,
+            "description": "Heavy Rain",
+            "windSpeed": 10.3,
+            "windDirection": 92
+        },
+        "betting": {
+            "spread": -38.5,
+            "overUnder": 51.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401752670,
+        "startDate": "2025-08-30T16:45:00.000Z",
+        "startTimeTBD": false,
+        "tv": "SEC Network",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "2nd & 11 at TOL 32",
+        "possession": "home",
+        "lastPlay": "(00:37) Kneel down by Kentucky at TOL32 for loss of 1 yard.",
+        "venue": {
+            "name": "Kroger Field",
+            "city": "Lexington",
+            "state": "KY"
+        },
+        "homeTeam": {
+            "id": 96,
+            "name": "Kentucky Wildcats",
+            "conference": "SEC",
+            "classification": "fbs",
+            "points": 24,
+            "lineScores": [
+                7,
+                3,
+                0,
+                14
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2649,
+            "name": "Toledo Rockets",
+            "conference": "Mid-American",
+            "classification": "fbs",
+            "points": 16,
+            "lineScores": [
+                0,
+                2,
+                0,
+                14
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 72,
+            "description": null,
+            "windSpeed": 9.4,
+            "windDirection": 48
+        },
+        "betting": {
+            "spread": -10,
+            "overUnder": 49,
+            "homeMoneyline": -350,
+            "awayMoneyline": 275
+        }
+    },
+    {
+        "id": 401752671,
+        "startDate": "2025-08-30T23:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": "ABC",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "2nd & 11 at LSU 14",
+        "possession": "away",
+        "lastPlay": "TEAM run for a loss of 1 yard to the LSU 14",
+        "venue": {
+            "name": "Memorial Stadium (Clemson, SC)",
+            "city": "Clemson",
+            "state": "SC"
+        },
+        "homeTeam": {
+            "id": 228,
+            "name": "Clemson Tigers",
+            "conference": "ACC",
+            "classification": "fbs",
+            "points": 10,
+            "lineScores": [
+                3,
+                7,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 99,
+            "name": "LSU Tigers",
+            "conference": "SEC",
+            "classification": "fbs",
+            "points": 17,
+            "lineScores": [
+                0,
+                3,
+                7,
+                7
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 81.7,
+            "description": "Rain",
+            "windSpeed": 7.4,
+            "windDirection": 77
+        },
+        "betting": {
+            "spread": -5.5,
+            "overUnder": 55.5,
+            "homeMoneyline": -150,
+            "awayMoneyline": 130
+        }
+    },
+    {
+        "id": 401752672,
+        "startDate": "2025-08-30T23:45:00.000Z",
+        "startTimeTBD": false,
+        "tv": "SEC Network",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "2nd & 3 at GAST 32",
+        "possession": "away",
+        "lastPlay": "TJ Peyton run for 7 yds to the GAST 32",
+        "venue": {
+            "name": "Vaught-Hemingway Stadium",
+            "city": "Oxford",
+            "state": "MS"
+        },
+        "homeTeam": {
+            "id": 145,
+            "name": "Ole Miss Rebels",
+            "conference": "SEC",
+            "classification": "fbs",
+            "points": 63,
+            "lineScores": [
+                7,
+                18,
+                17,
+                21
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2247,
+            "name": "Georgia State Panthers",
+            "conference": "Sun Belt",
+            "classification": "fbs",
+            "points": 7,
+            "lineScores": [
+                0,
+                7,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 78.4,
+            "description": null,
+            "windSpeed": 5.8,
+            "windDirection": 27
+        },
+        "betting": {
+            "spread": -33.5,
+            "overUnder": 61,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401752673,
+        "startDate": "2025-08-30T16:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "ESPN",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "2nd & 7 at MSST 38",
+        "possession": "away",
+        "lastPlay": "Kolin Wilson run for 3 yds to the MSST 38",
+        "venue": {
+            "name": "M. M. Roberts Stadium",
+            "city": "Hattiesburg",
+            "state": "MS"
+        },
+        "homeTeam": {
+            "id": 2572,
+            "name": "Southern Miss Golden Eagles",
+            "conference": "Sun Belt",
+            "classification": "fbs",
+            "points": 17,
+            "lineScores": [
+                3,
+                7,
+                0,
+                7
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 344,
+            "name": "Mississippi State Bulldogs",
+            "conference": "SEC",
+            "classification": "fbs",
+            "points": 34,
+            "lineScores": [
+                10,
+                3,
+                21,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 81.1,
+            "description": null,
+            "windSpeed": 3.1,
+            "windDirection": 232
+        },
+        "betting": {
+            "spread": 14.5,
+            "overUnder": 60,
+            "homeMoneyline": 305,
+            "awayMoneyline": -410
+        }
+    },
+    {
+        "id": 401752674,
+        "startDate": "2025-08-28T23:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": "SEC Network",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "CARK - Passing Touchdown",
+        "possession": "away",
+        "lastPlay": "Luther Richesson pass complete to Manny Smith for 3 yds for a TD",
+        "venue": {
+            "name": "Memorial Stadium",
+            "city": "Columbia",
+            "state": "MO"
+        },
+        "homeTeam": {
+            "id": 142,
+            "name": "Missouri Tigers",
+            "conference": "SEC",
+            "classification": "fbs",
+            "points": 61,
+            "lineScores": [
+                9,
+                17,
+                14,
+                21
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2110,
+            "name": "Central Arkansas Bears",
+            "conference": "UAC",
+            "classification": "fcs",
+            "points": 6,
+            "lineScores": [
+                0,
+                0,
+                0,
+                6
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 78.8,
+            "description": null,
+            "windSpeed": 4.5,
+            "windDirection": 179
+        },
+        "betting": {
+            "spread": -38.5,
+            "overUnder": 52.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401752675,
+        "startDate": "2025-08-30T22:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "1st & 10 at ILST 22",
+        "possession": "home",
+        "lastPlay": "End of 4th Quarter",
+        "venue": {
+            "name": "Memorial Stadium (Norman, OK)",
+            "city": "Norman",
+            "state": "OK"
+        },
+        "homeTeam": {
+            "id": 201,
+            "name": "Oklahoma Sooners",
+            "conference": "SEC",
+            "classification": "fbs",
+            "points": 35,
+            "lineScores": [
+                7,
+                14,
+                0,
+                14
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2287,
+            "name": "Illinois State Redbirds",
+            "conference": "MVFC",
+            "classification": "fcs",
+            "points": 3,
+            "lineScores": [
+                0,
+                0,
+                3,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 81.1,
+            "description": "Cloudy",
+            "windSpeed": 8.1,
+            "windDirection": 80
+        },
+        "betting": {
+            "spread": -39.5,
+            "overUnder": 61,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401752676,
+        "startDate": "2025-08-30T16:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "ABC",
+        "neutralSite": true,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "2nd & 12 at TENN 14",
+        "possession": "home",
+        "lastPlay": "TEAM run for a loss of 2 yards to the TENN 14",
+        "venue": {
+            "name": "Mercedes-Benz Stadium",
+            "city": "Atlanta",
+            "state": "GA"
+        },
+        "homeTeam": {
+            "id": 2633,
+            "name": "Tennessee Volunteers",
+            "conference": "SEC",
+            "classification": "fbs",
+            "points": 45,
+            "lineScores": [
+                17,
+                14,
+                7,
+                7
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 183,
+            "name": "Syracuse Orange",
+            "conference": "ACC",
+            "classification": "fbs",
+            "points": 26,
+            "lineScores": [
+                0,
+                14,
+                6,
+                6
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 68.4,
+            "description": "Heavy Rain",
+            "windSpeed": 11.2,
+            "windDirection": 55
+        },
+        "betting": {
+            "spread": -13.5,
+            "overUnder": 51.5,
+            "homeMoneyline": -550,
+            "awayMoneyline": 390
+        }
+    },
+    {
+        "id": 401752677,
+        "startDate": "2025-08-30T16:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "FOX",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "2nd & 12 at OSU 45",
+        "possession": "home",
+        "lastPlay": "Timeout Texas, clock 01:25",
+        "venue": {
+            "name": "Ohio Stadium",
+            "city": "Columbus",
+            "state": "OH"
+        },
+        "homeTeam": {
+            "id": 194,
+            "name": "Ohio State Buckeyes",
+            "conference": "Big Ten",
+            "classification": "fbs",
+            "points": 14,
+            "lineScores": [
+                0,
+                7,
+                0,
+                7
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 251,
+            "name": "Texas Longhorns",
+            "conference": "SEC",
+            "classification": "fbs",
+            "points": 7,
+            "lineScores": [
+                0,
+                0,
+                0,
+                7
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 71.6,
+            "description": null,
+            "windSpeed": 9.4,
+            "windDirection": 18
+        },
+        "betting": {
+            "spread": -2,
+            "overUnder": 46.5,
+            "homeMoneyline": -140,
+            "awayMoneyline": 120
+        }
+    },
+    {
+        "id": 401752678,
+        "startDate": "2025-08-30T23:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "ESPN",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "UTSA - Extra Point Good",
+        "possession": "away",
+        "lastPlay": "(M. Petro KICK)",
+        "venue": {
+            "name": "Kyle Field",
+            "city": "College Station",
+            "state": "TX"
+        },
+        "homeTeam": {
+            "id": 245,
+            "name": "Texas A&M Aggies",
+            "conference": "SEC",
+            "classification": "fbs",
+            "points": 42,
+            "lineScores": [
+                7,
+                14,
+                14,
+                7
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2636,
+            "name": "UTSA Roadrunners",
+            "conference": "American Athletic",
+            "classification": "fbs",
+            "points": 24,
+            "lineScores": [
+                3,
+                7,
+                7,
+                7
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 88.3,
+            "description": null,
+            "windSpeed": 7.8,
+            "windDirection": 24
+        },
+        "betting": {
+            "spread": -24,
+            "overUnder": 58.5,
+            "homeMoneyline": -2800,
+            "awayMoneyline": 1100
+        }
+    },
+    {
+        "id": 401752679,
+        "startDate": "2025-08-30T23:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "CHSO - Field Goal Good",
+        "possession": "away",
+        "lastPlay": "Zach Gordon 38 yd FG GOOD",
+        "venue": {
+            "name": "FirstBank Stadium",
+            "city": "Nashville",
+            "state": "TN"
+        },
+        "homeTeam": {
+            "id": 238,
+            "name": "Vanderbilt Commodores",
+            "conference": "SEC",
+            "classification": "fbs",
+            "points": 45,
+            "lineScores": [
+                14,
+                14,
+                7,
+                10
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2127,
+            "name": "Charleston Southern Buccaneers",
+            "conference": "Big South-OVC",
+            "classification": "fcs",
+            "points": 3,
+            "lineScores": [
+                0,
+                0,
+                0,
+                3
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 79.2,
+            "description": "Fair",
+            "windSpeed": 10.4,
+            "windDirection": 27
+        },
+        "betting": {
+            "spread": -37.5,
+            "overUnder": 49.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401752680,
+        "startDate": "2025-08-31T19:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "ESPN",
+        "neutralSite": true,
+        "conferenceGame": false,
+        "status": "scheduled",
+        "period": null,
+        "clock": null,
+        "situation": null,
+        "possession": null,
+        "lastPlay": null,
+        "venue": {
+            "name": "Mercedes-Benz Stadium",
+            "city": "Atlanta",
+            "state": "GA"
+        },
+        "homeTeam": {
+            "id": 2579,
+            "name": "South Carolina Gamecocks",
+            "conference": "SEC",
+            "classification": "fbs",
+            "points": null,
+            "lineScores": null,
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 259,
+            "name": "Virginia Tech Hokies",
+            "conference": "ACC",
+            "classification": "fbs",
+            "points": null,
+            "lineScores": null,
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 77,
+            "description": "Cloudy",
+            "windSpeed": 12.7,
+            "windDirection": 64
+        },
+        "betting": {
+            "spread": -7,
+            "overUnder": 51,
+            "homeMoneyline": -350,
+            "awayMoneyline": 275
+        }
+    },
+    {
+        "id": 401752793,
+        "startDate": "2025-08-29T00:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "FS1",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "1st & 10 at BUF 15",
+        "possession": "home",
+        "lastPlay": "Darius Taylor run for 3 yds to the BUF 15 for a 1ST down",
+        "venue": {
+            "name": "Huntington Bank Stadium",
+            "city": "Minneapolis",
+            "state": "MN"
+        },
+        "homeTeam": {
+            "id": 135,
+            "name": "Minnesota Golden Gophers",
+            "conference": "Big Ten",
+            "classification": "fbs",
+            "points": 23,
+            "lineScores": [
+                0,
+                10,
+                3,
+                10
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2084,
+            "name": "Buffalo Bulls",
+            "conference": "Mid-American",
+            "classification": "fbs",
+            "points": 10,
+            "lineScores": [
+                0,
+                3,
+                7,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 66.4,
+            "description": "Cloudy",
+            "windSpeed": 8.9,
+            "windDirection": 49
+        },
+        "betting": {
+            "spread": -18.5,
+            "overUnder": 43,
+            "homeMoneyline": -900,
+            "awayMoneyline": 575
+        }
+    },
+    {
+        "id": 401752794,
+        "startDate": "2025-08-28T22:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "BTN",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "4th & 7 at OHIO 28",
+        "possession": "home",
+        "lastPlay": "Athan Kaliakmanis pass complete to DT Sheffield for 10 yds to the OHIO 28 for a 1ST down",
+        "venue": {
+            "name": "SHI Stadium",
+            "city": "Piscataway",
+            "state": "NJ"
+        },
+        "homeTeam": {
+            "id": 164,
+            "name": "Rutgers Scarlet Knights",
+            "conference": "Big Ten",
+            "classification": "fbs",
+            "points": 34,
+            "lineScores": [
+                7,
+                24,
+                0,
+                3
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 195,
+            "name": "Ohio Bobcats",
+            "conference": "Mid-American",
+            "classification": "fbs",
+            "points": 31,
+            "lineScores": [
+                7,
+                10,
+                14,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 81,
+            "description": null,
+            "windSpeed": 6.7,
+            "windDirection": 244
+        },
+        "betting": {
+            "spread": -15.5,
+            "overUnder": 52,
+            "homeMoneyline": -510,
+            "awayMoneyline": 370
+        }
+    },
+    {
+        "id": 401752795,
+        "startDate": "2025-08-29T23:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "1st & 10 at WIU 20",
+        "possession": "home",
+        "lastPlay": "Ethan Hampton pass complete to Mario Sanders II for 14 yds to the WIU 20 for a 1ST down",
+        "venue": {
+            "name": "Memorial Stadium (Champaign, IL)",
+            "city": "Champaign",
+            "state": "IL"
+        },
+        "homeTeam": {
+            "id": 356,
+            "name": "Illinois Fighting Illini",
+            "conference": "Big Ten",
+            "classification": "fbs",
+            "points": 52,
+            "lineScores": [
+                14,
+                17,
+                7,
+                14
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2710,
+            "name": "Western Illinois Leathernecks",
+            "conference": "Big South-OVC",
+            "classification": "fcs",
+            "points": 3,
+            "lineScores": [
+                0,
+                0,
+                0,
+                3
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 70.2,
+            "description": null,
+            "windSpeed": 9.8,
+            "windDirection": 34
+        },
+        "betting": {
+            "spread": -48.5,
+            "overUnder": 62.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401752796,
+        "startDate": "2025-08-29T01:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "ESPN",
+        "neutralSite": true,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "2nd & 13 at NEB 17",
+        "possession": "away",
+        "lastPlay": "D. Raiola takes a knee",
+        "venue": {
+            "name": "GEHA Field at Arrowhead Stadium",
+            "city": "Kansas City",
+            "state": "MO"
+        },
+        "homeTeam": {
+            "id": 2132,
+            "name": "Cincinnati Bearcats",
+            "conference": "Big 12",
+            "classification": "fbs",
+            "points": 17,
+            "lineScores": [
+                3,
+                0,
+                7,
+                7
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 158,
+            "name": "Nebraska Cornhuskers",
+            "conference": "Big Ten",
+            "classification": "fbs",
+            "points": 20,
+            "lineScores": [
+                0,
+                13,
+                0,
+                7
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 78.4,
+            "description": null,
+            "windSpeed": 5.2,
+            "windDirection": 86
+        },
+        "betting": {
+            "spread": 6,
+            "overUnder": 50.5,
+            "homeMoneyline": 210,
+            "awayMoneyline": -250
+        }
+    },
+    {
+        "id": 401752797,
+        "startDate": "2025-08-30T16:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "BTN",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "1st & 10 at MD 47",
+        "possession": "away",
+        "lastPlay": "Kaden Shields-Dutton run for 7 yds to the MD 47 for a 1ST down",
+        "venue": {
+            "name": "SECU Stadium",
+            "city": "College Park",
+            "state": "MD"
+        },
+        "homeTeam": {
+            "id": 120,
+            "name": "Maryland Terrapins",
+            "conference": "Big Ten",
+            "classification": "fbs",
+            "points": 39,
+            "lineScores": [
+                7,
+                26,
+                6,
+                0
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2226,
+            "name": "Florida Atlantic Owls",
+            "conference": "American Athletic",
+            "classification": "fbs",
+            "points": 7,
+            "lineScores": [
+                7,
+                0,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 71.4,
+            "description": "Cloudy",
+            "windSpeed": 6.9,
+            "windDirection": 355
+        },
+        "betting": {
+            "spread": -12.5,
+            "overUnder": 60,
+            "homeMoneyline": -850,
+            "awayMoneyline": 550
+        }
+    },
+    {
+        "id": 401752798,
+        "startDate": "2025-08-30T23:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": "BTN",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "1st & 10 at USC 6",
+        "possession": "away",
+        "lastPlay": "Stewart McDonald punt for 43 yds, punt out-of-bounds at the USC 6",
+        "venue": {
+            "name": "Los Angeles Memorial Coliseum",
+            "city": "Los Angeles",
+            "state": "CA"
+        },
+        "homeTeam": {
+            "id": 30,
+            "name": "USC Trojans",
+            "conference": "Big Ten",
+            "classification": "fbs",
+            "points": 73,
+            "lineScores": [
+                14,
+                28,
+                14,
+                17
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2623,
+            "name": "Missouri State Bears",
+            "conference": "Conference USA",
+            "classification": "fbs",
+            "points": 13,
+            "lineScores": [
+                3,
+                7,
+                3,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 75.4,
+            "description": "Fair",
+            "windSpeed": 13.8,
+            "windDirection": 259
+        },
+        "betting": {
+            "spread": -36.5,
+            "overUnder": 60,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401752799,
+        "startDate": "2025-08-30T22:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "FS1",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "2nd & 10 at IOWA 34",
+        "possession": "away",
+        "lastPlay": "Jack Shields pass incomplete to Jasiah Barron",
+        "venue": {
+            "name": "Kinnick Stadium",
+            "city": "Iowa City",
+            "state": "IA"
+        },
+        "homeTeam": {
+            "id": 2294,
+            "name": "Iowa Hawkeyes",
+            "conference": "Big Ten",
+            "classification": "fbs",
+            "points": 34,
+            "lineScores": [
+                3,
+                14,
+                7,
+                10
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 399,
+            "name": "UAlbany Great Danes",
+            "conference": "CAA",
+            "classification": "fcs",
+            "points": 7,
+            "lineScores": [
+                0,
+                7,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 70.3,
+            "description": null,
+            "windSpeed": 3.8,
+            "windDirection": 108
+        },
+        "betting": {
+            "spread": null,
+            "overUnder": null,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401752800,
+        "startDate": "2025-08-31T03:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "FOX",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "1st & 10 at UCLA 36",
+        "possession": "away",
+        "lastPlay": "run for a loss of 1 yard to the UCLA 36",
+        "venue": {
+            "name": "Rose Bowl",
+            "city": "Pasadena",
+            "state": "CA"
+        },
+        "homeTeam": {
+            "id": 26,
+            "name": "UCLA Bruins",
+            "conference": "Big Ten",
+            "classification": "fbs",
+            "points": 10,
+            "lineScores": [
+                0,
+                7,
+                3,
+                0
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 254,
+            "name": "Utah Utes",
+            "conference": "Big 12",
+            "classification": "fbs",
+            "points": 43,
+            "lineScores": [
+                13,
+                10,
+                7,
+                13
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 78.3,
+            "description": null,
+            "windSpeed": 1.8,
+            "windDirection": 160
+        },
+        "betting": {
+            "spread": 6.5,
+            "overUnder": 49,
+            "homeMoneyline": 100,
+            "awayMoneyline": -120
+        }
+    },
+    {
+        "id": 401752801,
+        "startDate": "2025-08-30T16:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "BTN",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "1st & 10 at BALL 20",
+        "possession": "home",
+        "lastPlay": "Timeout Purdue, clock 01:19",
+        "venue": {
+            "name": "Ross-Ade Stadium",
+            "city": "West Lafayette",
+            "state": "IN"
+        },
+        "homeTeam": {
+            "id": 2509,
+            "name": "Purdue Boilermakers",
+            "conference": "Big Ten",
+            "classification": "fbs",
+            "points": 31,
+            "lineScores": [
+                14,
+                7,
+                7,
+                3
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2050,
+            "name": "Ball State Cardinals",
+            "conference": "Mid-American",
+            "classification": "fbs",
+            "points": 0,
+            "lineScores": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 72.1,
+            "description": null,
+            "windSpeed": 5.2,
+            "windDirection": 50
+        },
+        "betting": {
+            "spread": -16.5,
+            "overUnder": 48.5,
+            "homeMoneyline": -900,
+            "awayMoneyline": 575
+        }
+    },
+    {
+        "id": 401752802,
+        "startDate": "2025-08-29T23:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "FS1",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "1st & 10 at WMU 48",
+        "possession": "away",
+        "lastPlay": "Brady Jones pass incomplete to Aveion Chenault, broken up by Chance Rucker",
+        "venue": {
+            "name": "Spartan Stadium",
+            "city": "East Lansing",
+            "state": "MI"
+        },
+        "homeTeam": {
+            "id": 127,
+            "name": "Michigan State Spartans",
+            "conference": "Big Ten",
+            "classification": "fbs",
+            "points": 23,
+            "lineScores": [
+                7,
+                14,
+                2,
+                0
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2711,
+            "name": "Western Michigan Broncos",
+            "conference": "Mid-American",
+            "classification": "fbs",
+            "points": 6,
+            "lineScores": [
+                0,
+                0,
+                0,
+                6
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 74.8,
+            "description": null,
+            "windSpeed": 4.2,
+            "windDirection": 322
+        },
+        "betting": {
+            "spread": -21.5,
+            "overUnder": 50,
+            "homeMoneyline": -1600,
+            "awayMoneyline": 800
+        }
+    },
+    {
+        "id": 401752803,
+        "startDate": "2025-08-30T16:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "ESPNU",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "1st & 10 at NU 27",
+        "possession": "home",
+        "lastPlay": "Maurice Turner run for 15 yds to the NU 27 for a 1ST down",
+        "venue": {
+            "name": "Yulman Stadium",
+            "city": "New Orleans",
+            "state": "LA"
+        },
+        "homeTeam": {
+            "id": 2655,
+            "name": "Tulane Green Wave",
+            "conference": "American Athletic",
+            "classification": "fbs",
+            "points": 23,
+            "lineScores": [
+                7,
+                13,
+                3,
+                0
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 77,
+            "name": "Northwestern Wildcats",
+            "conference": "Big Ten",
+            "classification": "fbs",
+            "points": 3,
+            "lineScores": [
+                3,
+                0,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 84.7,
+            "description": "Light Rain",
+            "windSpeed": 5.8,
+            "windDirection": 304
+        },
+        "betting": {
+            "spread": -5,
+            "overUnder": 46,
+            "homeMoneyline": -230,
+            "awayMoneyline": 190
+        }
+    },
+    {
+        "id": 401752804,
+        "startDate": "2025-08-30T20:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "BTN",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "MTST - Extra Point Good",
+        "possession": "away",
+        "lastPlay": "(M. Sansted KICK)",
+        "venue": {
+            "name": "Autzen Stadium",
+            "city": "Eugene",
+            "state": "OR"
+        },
+        "homeTeam": {
+            "id": 2483,
+            "name": "Oregon Ducks",
+            "conference": "Big Ten",
+            "classification": "fbs",
+            "points": 59,
+            "lineScores": [
+                17,
+                21,
+                14,
+                7
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 147,
+            "name": "Montana State Bobcats",
+            "conference": "Big Sky",
+            "classification": "fcs",
+            "points": 13,
+            "lineScores": [
+                0,
+                3,
+                3,
+                7
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 73.6,
+            "description": null,
+            "windSpeed": 8.7,
+            "windDirection": 360
+        },
+        "betting": {
+            "spread": -28,
+            "overUnder": 56.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401752805,
+        "startDate": "2025-08-31T03:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "BTN",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": null,
+        "possession": null,
+        "lastPlay": null,
+        "venue": {
+            "name": "Husky Stadium",
+            "city": "Seattle",
+            "state": "WA"
+        },
+        "homeTeam": {
+            "id": 264,
+            "name": "Washington Huskies",
+            "conference": "Big Ten",
+            "classification": "fbs",
+            "points": 38,
+            "lineScores": [
+                7,
+                7,
+                14,
+                10
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 36,
+            "name": "Colorado State Rams",
+            "conference": "Mountain West",
+            "classification": "fbs",
+            "points": 21,
+            "lineScores": [
+                7,
+                7,
+                7,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 70.3,
+            "description": "Cloudy",
+            "windSpeed": 6.9,
+            "windDirection": 307
+        },
+        "betting": {
+            "spread": -22.5,
+            "overUnder": 52,
+            "homeMoneyline": -1600,
+            "awayMoneyline": 800
+        }
+    },
+    {
+        "id": 401752806,
+        "startDate": "2025-08-30T18:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": "FS1",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "3rd & 5 at ODU 14",
+        "possession": "home",
+        "lastPlay": "Kaelon Black run for 3 yds to the ODU 14",
+        "venue": {
+            "name": "Memorial Stadium (Bloomington, IN)",
+            "city": "Bloomington",
+            "state": "IN"
+        },
+        "homeTeam": {
+            "id": 84,
+            "name": "Indiana Hoosiers",
+            "conference": "Big Ten",
+            "classification": "fbs",
+            "points": 27,
+            "lineScores": [
+                7,
+                10,
+                10,
+                0
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 295,
+            "name": "Old Dominion Monarchs",
+            "conference": "Sun Belt",
+            "classification": "fbs",
+            "points": 14,
+            "lineScores": [
+                7,
+                0,
+                0,
+                7
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 72.7,
+            "description": null,
+            "windSpeed": 7.1,
+            "windDirection": 49
+        },
+        "betting": {
+            "spread": -23,
+            "overUnder": 53,
+            "homeMoneyline": -3300,
+            "awayMoneyline": 1100
+        }
+    },
+    {
+        "id": 401752807,
+        "startDate": "2025-08-30T19:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": "CBS",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": null,
+        "possession": null,
+        "lastPlay": null,
+        "venue": {
+            "name": "Beaver Stadium",
+            "city": "University Park",
+            "state": "PA"
+        },
+        "homeTeam": {
+            "id": 213,
+            "name": "Penn State Nittany Lions",
+            "conference": "Big Ten",
+            "classification": "fbs",
+            "points": 46,
+            "lineScores": [
+                10,
+                17,
+                12,
+                7
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2440,
+            "name": "Nevada Wolf Pack",
+            "conference": "Mountain West",
+            "classification": "fbs",
+            "points": 11,
+            "lineScores": [
+                0,
+                3,
+                0,
+                8
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 73.9,
+            "description": "Fair",
+            "windSpeed": 6.9,
+            "windDirection": 194
+        },
+        "betting": {
+            "spread": -43.5,
+            "overUnder": 54.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401752808,
+        "startDate": "2025-08-30T23:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": "NBC",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": null,
+        "possession": null,
+        "lastPlay": null,
+        "venue": {
+            "name": "Michigan Stadium",
+            "city": "Ann Arbor",
+            "state": "MI"
+        },
+        "homeTeam": {
+            "id": 130,
+            "name": "Michigan Wolverines",
+            "conference": "Big Ten",
+            "classification": "fbs",
+            "points": 34,
+            "lineScores": [
+                14,
+                10,
+                3,
+                7
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 167,
+            "name": "New Mexico Lobos",
+            "conference": "Mountain West",
+            "classification": "fbs",
+            "points": 17,
+            "lineScores": [
+                0,
+                10,
+                7,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 69.8,
+            "description": null,
+            "windSpeed": 8.1,
+            "windDirection": 7
+        },
+        "betting": {
+            "spread": -34.5,
+            "overUnder": 49.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401752936,
+        "startDate": "2025-08-31T02:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": "ESPN",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "CAL - Field Goal Good",
+        "possession": "away",
+        "lastPlay": "Chase Meyer 23 yd FG GOOD",
+        "venue": {
+            "name": "Reser Stadium",
+            "city": "Corvallis",
+            "state": "OR"
+        },
+        "homeTeam": {
+            "id": 204,
+            "name": "Oregon State Beavers",
+            "conference": "Pac-12",
+            "classification": "fbs",
+            "points": 15,
+            "lineScores": [
+                0,
+                3,
+                6,
+                6
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 25,
+            "name": "California Golden Bears",
+            "conference": "ACC",
+            "classification": "fbs",
+            "points": 34,
+            "lineScores": [
+                14,
+                3,
+                7,
+                10
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 84.2,
+            "description": null,
+            "windSpeed": 8.1,
+            "windDirection": 2
+        },
+        "betting": {
+            "spread": 3,
+            "overUnder": 48,
+            "homeMoneyline": -150,
+            "awayMoneyline": 130
+        }
+    },
+    {
+        "id": 401752947,
+        "startDate": "2025-08-31T02:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "The CW Network",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": null,
+        "possession": null,
+        "lastPlay": null,
+        "venue": {
+            "name": "Gesa Field",
+            "city": "Pullman",
+            "state": "WA"
+        },
+        "homeTeam": {
+            "id": 265,
+            "name": "Washington State Cougars",
+            "conference": "Pac-12",
+            "classification": "fbs",
+            "points": 10,
+            "lineScores": [
+                0,
+                7,
+                3,
+                0
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 70,
+            "name": "Idaho Vandals",
+            "conference": "Big Sky",
+            "classification": "fcs",
+            "points": 10,
+            "lineScores": [
+                0,
+                0,
+                0,
+                10
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 89.2,
+            "description": null,
+            "windSpeed": 4.7,
+            "windDirection": 301
+        },
+        "betting": {
+            "spread": -17,
+            "overUnder": 51,
+            "homeMoneyline": -850,
+            "awayMoneyline": 550
+        }
+    },
+    {
+        "id": 401754373,
+        "startDate": "2025-08-28T23:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "ACC Network",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "3rd & 14 at NCSU 6",
+        "possession": "home",
+        "lastPlay": "Timeout East Carolina, clock 00:32",
+        "venue": {
+            "name": "Carter-Finley Stadium",
+            "city": "Raleigh",
+            "state": "NC"
+        },
+        "homeTeam": {
+            "id": 152,
+            "name": "NC State Wolfpack",
+            "conference": "ACC",
+            "classification": "fbs",
+            "points": 24,
+            "lineScores": [
+                3,
+                14,
+                7,
+                0
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 151,
+            "name": "East Carolina Pirates",
+            "conference": "American Athletic",
+            "classification": "fbs",
+            "points": 17,
+            "lineScores": [
+                0,
+                7,
+                0,
+                10
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 72.9,
+            "description": "Fair",
+            "windSpeed": 1.1,
+            "windDirection": 154
+        },
+        "betting": {
+            "spread": -14,
+            "overUnder": 61,
+            "homeMoneyline": -435,
+            "awayMoneyline": 325
+        }
+    },
+    {
+        "id": 401754374,
+        "startDate": "2025-08-29T23:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "ACC Network",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "3rd & 17 at KENN 24",
+        "possession": "home",
+        "lastPlay": "(01:07) Kneel down by Wake Forest at KennSt24 for loss of 2 yards.",
+        "venue": {
+            "name": "Allegacy Federal Credit Union Stadium",
+            "city": "Winston-Salem",
+            "state": "NC"
+        },
+        "homeTeam": {
+            "id": 154,
+            "name": "Wake Forest Demon Deacons",
+            "conference": "ACC",
+            "classification": "fbs",
+            "points": 10,
+            "lineScores": [
+                7,
+                0,
+                3,
+                0
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 338,
+            "name": "Kennesaw State Owls",
+            "conference": "Conference USA",
+            "classification": "fbs",
+            "points": 9,
+            "lineScores": [
+                6,
+                0,
+                3,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 78.4,
+            "description": "Clear",
+            "windSpeed": 6,
+            "windDirection": 205
+        },
+        "betting": {
+            "spread": -18.5,
+            "overUnder": 51,
+            "homeMoneyline": -1200,
+            "awayMoneyline": 700
+        }
+    },
+    {
+        "id": 401754375,
+        "startDate": "2025-08-30T00:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "ESPN",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "2nd & 10 at COLO 39",
+        "possession": "home",
+        "lastPlay": "Kaidon Salter pass incomplete to Dre'lon Miller",
+        "venue": {
+            "name": "Folsom Field",
+            "city": "Boulder",
+            "state": "CO"
+        },
+        "homeTeam": {
+            "id": 38,
+            "name": "Colorado Buffaloes",
+            "conference": "Big 12",
+            "classification": "fbs",
+            "points": 20,
+            "lineScores": [
+                7,
+                3,
+                3,
+                7
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 59,
+            "name": "Georgia Tech Yellow Jackets",
+            "conference": "ACC",
+            "classification": "fbs",
+            "points": 27,
+            "lineScores": [
+                0,
+                13,
+                7,
+                7
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 69.1,
+            "description": null,
+            "windSpeed": 1.4,
+            "windDirection": 316
+        },
+        "betting": {
+            "spread": 3.5,
+            "overUnder": 50,
+            "homeMoneyline": 150,
+            "awayMoneyline": -175
+        }
+    },
+    {
+        "id": 401754516,
+        "startDate": "2025-08-23T23:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": "CBS",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "2nd & 10 at STAN 21",
+        "possession": "home",
+        "lastPlay": "Kansei Matsuzawa 38 yd FG GOOD",
+        "venue": {
+            "name": "Clarence T.C. Ching Athletics Complex",
+            "city": "Honolulu",
+            "state": "HI"
+        },
+        "homeTeam": {
+            "id": 62,
+            "name": "Hawai'i Rainbow Warriors",
+            "conference": "Mountain West",
+            "classification": "fbs",
+            "points": 23,
+            "lineScores": [
+                7,
+                7,
+                3,
+                6
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 24,
+            "name": "Stanford Cardinal",
+            "conference": "ACC",
+            "classification": "fbs",
+            "points": 20,
+            "lineScores": [
+                10,
+                3,
+                0,
+                7
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 82.8,
+            "description": "Clear",
+            "windSpeed": 23.9,
+            "windDirection": 69
+        },
+        "betting": {
+            "spread": -2,
+            "overUnder": 50,
+            "homeMoneyline": 115,
+            "awayMoneyline": -135
+        }
+    },
+    {
+        "id": 401754517,
+        "startDate": "2025-08-28T23:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "3rd & 1 at ELON 34",
+        "possession": "away",
+        "lastPlay": "Dan Frederick run for 5 yds to the ELON 34",
+        "venue": {
+            "name": "Wallace Wade Stadium",
+            "city": "Durham",
+            "state": "NC"
+        },
+        "homeTeam": {
+            "id": 150,
+            "name": "Duke Blue Devils",
+            "conference": "ACC",
+            "classification": "fbs",
+            "points": 45,
+            "lineScores": [
+                3,
+                7,
+                14,
+                21
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2210,
+            "name": "Elon Phoenix",
+            "conference": "CAA",
+            "classification": "fcs",
+            "points": 17,
+            "lineScores": [
+                0,
+                10,
+                0,
+                7
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 73,
+            "description": "Fair",
+            "windSpeed": 1.1,
+            "windDirection": 154
+        },
+        "betting": {
+            "spread": -36.5,
+            "overUnder": 51.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401754518,
+        "startDate": "2025-08-30T18:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "4th & 18 at FOR 17",
+        "possession": "away",
+        "lastPlay": "Dominic Sansone punt for 33 yds",
+        "venue": {
+            "name": "Alumni Stadium (Chestnut Hill, MA)",
+            "city": "Chestnut Hill",
+            "state": "MA"
+        },
+        "homeTeam": {
+            "id": 103,
+            "name": "Boston College Eagles",
+            "conference": "ACC",
+            "classification": "fbs",
+            "points": 66,
+            "lineScores": [
+                14,
+                7,
+                24,
+                21
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2230,
+            "name": "Fordham Rams",
+            "conference": "Patriot",
+            "classification": "fcs",
+            "points": 10,
+            "lineScores": [
+                3,
+                0,
+                0,
+                7
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 66.2,
+            "description": "Cloudy",
+            "windSpeed": 11.5,
+            "windDirection": 295
+        },
+        "betting": {
+            "spread": -35,
+            "overUnder": 53.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401754519,
+        "startDate": "2025-08-30T19:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "ACC Network",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": null,
+        "possession": null,
+        "lastPlay": null,
+        "venue": {
+            "name": "L&N Federal Credit Union Stadium",
+            "city": "Louisville",
+            "state": "KY"
+        },
+        "homeTeam": {
+            "id": 97,
+            "name": "Louisville Cardinals",
+            "conference": "ACC",
+            "classification": "fbs",
+            "points": 51,
+            "lineScores": [
+                21,
+                20,
+                7,
+                3
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2198,
+            "name": "Eastern Kentucky Colonels",
+            "conference": "UAC",
+            "classification": "fcs",
+            "points": 17,
+            "lineScores": [
+                0,
+                7,
+                0,
+                10
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 76.1,
+            "description": "Cloudy",
+            "windSpeed": 9.2,
+            "windDirection": 30
+        },
+        "betting": {
+            "spread": -38,
+            "overUnder": 56.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401754520,
+        "startDate": "2025-08-30T16:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "ACC Network",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "2nd & 11 at DUQ 24",
+        "possession": "away",
+        "lastPlay": "Dazhaun Hopkins run for a loss of 1 yard to the DUQ 24",
+        "venue": {
+            "name": "Acrisure Stadium",
+            "city": "Pittsburgh",
+            "state": "PA"
+        },
+        "homeTeam": {
+            "id": 221,
+            "name": "Pittsburgh Panthers",
+            "conference": "ACC",
+            "classification": "fbs",
+            "points": 61,
+            "lineScores": [
+                14,
+                20,
+                14,
+                13
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2184,
+            "name": "Duquesne Dukes",
+            "conference": "NEC",
+            "classification": "fcs",
+            "points": 9,
+            "lineScores": [
+                0,
+                6,
+                0,
+                3
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 71.8,
+            "description": "Cloudy",
+            "windSpeed": 5.8,
+            "windDirection": 336
+        },
+        "betting": {
+            "spread": -39,
+            "overUnder": 58,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401754521,
+        "startDate": "2025-08-31T01:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "ACC Network",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "3rd & Goal at SMU 9",
+        "possession": "away",
+        "lastPlay": null,
+        "venue": {
+            "name": "Gerald J. Ford Stadium",
+            "city": "University Park",
+            "state": "TX"
+        },
+        "homeTeam": {
+            "id": 2567,
+            "name": "SMU Mustangs",
+            "conference": "ACC",
+            "classification": "fbs",
+            "points": 42,
+            "lineScores": [
+                14,
+                7,
+                7,
+                14
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2837,
+            "name": "East Texas A&M Lions",
+            "conference": "Southland",
+            "classification": "fcs",
+            "points": 13,
+            "lineScores": [
+                0,
+                3,
+                0,
+                10
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 88.5,
+            "description": null,
+            "windSpeed": 7.4,
+            "windDirection": 50
+        },
+        "betting": {
+            "spread": -51,
+            "overUnder": 65,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401754522,
+        "startDate": "2025-08-31T23:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": "ABC",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "scheduled",
+        "period": null,
+        "clock": null,
+        "situation": null,
+        "possession": null,
+        "lastPlay": null,
+        "venue": {
+            "name": "Hard Rock Stadium",
+            "city": "Miami Gardens",
+            "state": "FL"
+        },
+        "homeTeam": {
+            "id": 2390,
+            "name": "Miami Hurricanes",
+            "conference": "ACC",
+            "classification": "fbs",
+            "points": null,
+            "lineScores": null,
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 87,
+            "name": "Notre Dame Fighting Irish",
+            "conference": "FBS Independents",
+            "classification": "fbs",
+            "points": null,
+            "lineScores": null,
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 82.9,
+            "description": "Heavy Rain Shower",
+            "windSpeed": 5.8,
+            "windDirection": 181
+        },
+        "betting": {
+            "spread": 3,
+            "overUnder": 51,
+            "homeMoneyline": 115,
+            "awayMoneyline": -135
+        }
+    },
+    {
+        "id": 401754523,
+        "startDate": "2025-09-02T00:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "ESPN",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "scheduled",
+        "period": null,
+        "clock": null,
+        "situation": null,
+        "possession": null,
+        "lastPlay": null,
+        "venue": {
+            "name": "Kenan Stadium",
+            "city": "Chapel Hill",
+            "state": "NC"
+        },
+        "homeTeam": {
+            "id": 153,
+            "name": "North Carolina Tar Heels",
+            "conference": "ACC",
+            "classification": "fbs",
+            "points": null,
+            "lineScores": null,
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2628,
+            "name": "TCU Horned Frogs",
+            "conference": "Big 12",
+            "classification": "fbs",
+            "points": null,
+            "lineScores": null,
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 71.2,
+            "description": "Cloudy",
+            "windSpeed": 5.8,
+            "windDirection": 49
+        },
+        "betting": {
+            "spread": 3.5,
+            "overUnder": 55.5,
+            "homeMoneyline": 140,
+            "awayMoneyline": -165
+        }
+    },
+    {
+        "id": 401754616,
+        "startDate": "2025-08-30T22:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "ACC Network",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": null,
+        "possession": null,
+        "lastPlay": null,
+        "venue": {
+            "name": "Scott Stadium",
+            "city": "Charlottesville",
+            "state": "VA"
+        },
+        "homeTeam": {
+            "id": 258,
+            "name": "Virginia Cavaliers",
+            "conference": "ACC",
+            "classification": "fbs",
+            "points": 48,
+            "lineScores": [
+                7,
+                21,
+                14,
+                6
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 324,
+            "name": "Coastal Carolina Chanticleers",
+            "conference": "Sun Belt",
+            "classification": "fbs",
+            "points": 7,
+            "lineScores": [
+                0,
+                0,
+                7,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 77.5,
+            "description": null,
+            "windSpeed": 5.2,
+            "windDirection": 23
+        },
+        "betting": {
+            "spread": -13.5,
+            "overUnder": 55,
+            "homeMoneyline": -470,
+            "awayMoneyline": 345
+        }
+    },
+    {
+        "id": 401756846,
+        "startDate": "2025-08-23T16:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "ESPN",
+        "neutralSite": true,
+        "conferenceGame": true,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "4th & Goal at KSU 3",
+        "possession": "away",
+        "lastPlay": "TEAM run for a loss of 1 yard to the KSU 3",
+        "venue": {
+            "name": "Aviva Stadium",
+            "city": "Dublin",
+            "state": ""
+        },
+        "homeTeam": {
+            "id": 2306,
+            "name": "Kansas State Wildcats",
+            "conference": "Big 12",
+            "classification": "fbs",
+            "points": 21,
+            "lineScores": [
+                0,
+                7,
+                0,
+                14
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 66,
+            "name": "Iowa State Cyclones",
+            "conference": "Big 12",
+            "classification": "fbs",
+            "points": 24,
+            "lineScores": [
+                7,
+                0,
+                7,
+                10
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 67.6,
+            "description": "Overcast",
+            "windSpeed": 4.3,
+            "windDirection": 130
+        },
+        "betting": {
+            "spread": -3,
+            "overUnder": 51,
+            "homeMoneyline": -165,
+            "awayMoneyline": 140
+        }
+    },
+    {
+        "id": 401756847,
+        "startDate": "2025-08-23T22:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": "FOX",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "3rd & Goal at FRES 3",
+        "possession": "home",
+        "lastPlay": "Isaiah Marshall run for a loss of 1 yard to the FRES 3",
+        "venue": {
+            "name": "Memorial Stadium",
+            "city": "Lawrence",
+            "state": "KS"
+        },
+        "homeTeam": {
+            "id": 2305,
+            "name": "Kansas Jayhawks",
+            "conference": "Big 12",
+            "classification": "fbs",
+            "points": 31,
+            "lineScores": [
+                14,
+                10,
+                7,
+                0
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 278,
+            "name": "Fresno State Bulldogs",
+            "conference": "Mountain West",
+            "classification": "fbs",
+            "points": 7,
+            "lineScores": [
+                7,
+                0,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 81.3,
+            "description": "Clear",
+            "windSpeed": 10.3,
+            "windDirection": 356
+        },
+        "betting": {
+            "spread": -14,
+            "overUnder": 50,
+            "homeMoneyline": -575,
+            "awayMoneyline": 400
+        }
+    },
+    {
+        "id": 401756848,
+        "startDate": "2025-08-28T23:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "2nd & 12 at UCF 42",
+        "possession": "home",
+        "lastPlay": "run for a loss of 2 yards to the UCF 42",
+        "venue": {
+            "name": "FBC Mortgage Stadium",
+            "city": "Orlando",
+            "state": "FL"
+        },
+        "homeTeam": {
+            "id": 2116,
+            "name": "UCF Knights",
+            "conference": "Big 12",
+            "classification": "fbs",
+            "points": 17,
+            "lineScores": [
+                0,
+                0,
+                3,
+                14
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 55,
+            "name": "Jacksonville State Gamecocks",
+            "conference": "Conference USA",
+            "classification": "fbs",
+            "points": 10,
+            "lineScores": [
+                0,
+                0,
+                3,
+                7
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 82.6,
+            "description": "Heavy Rain Shower",
+            "windSpeed": 5.8,
+            "windDirection": 78
+        },
+        "betting": {
+            "spread": -20.5,
+            "overUnder": 52.5,
+            "homeMoneyline": -800,
+            "awayMoneyline": 525
+        }
+    },
+    {
+        "id": 401756849,
+        "startDate": "2025-08-31T02:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": "TNT",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": null,
+        "possession": null,
+        "lastPlay": null,
+        "venue": {
+            "name": "Arizona Stadium",
+            "city": "Tucson",
+            "state": "AZ"
+        },
+        "homeTeam": {
+            "id": 12,
+            "name": "Arizona Wildcats",
+            "conference": "Big 12",
+            "classification": "fbs",
+            "points": 40,
+            "lineScores": [
+                7,
+                10,
+                14,
+                9
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 62,
+            "name": "Hawai'i Rainbow Warriors",
+            "conference": "Mountain West",
+            "classification": "fbs",
+            "points": 6,
+            "lineScores": [
+                3,
+                3,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 88.5,
+            "description": "Light Rain",
+            "windSpeed": 8.1,
+            "windDirection": 194
+        },
+        "betting": {
+            "spread": -15.5,
+            "overUnder": 55,
+            "homeMoneyline": -575,
+            "awayMoneyline": 400
+        }
+    },
+    {
+        "id": 401756850,
+        "startDate": "2025-08-31T02:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "2nd & 12 at ASU 23",
+        "possession": "home",
+        "lastPlay": "(00:20) Kneel down by Arizona St. at ASU23 for loss of 2 yards.",
+        "venue": {
+            "name": "Mountain America Stadium",
+            "city": "Tempe",
+            "state": "AZ"
+        },
+        "homeTeam": {
+            "id": 9,
+            "name": "Arizona State Sun Devils",
+            "conference": "Big 12",
+            "classification": "fbs",
+            "points": 38,
+            "lineScores": [
+                14,
+                3,
+                14,
+                7
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2464,
+            "name": "Northern Arizona Lumberjacks",
+            "conference": "Big Sky",
+            "classification": "fcs",
+            "points": 19,
+            "lineScores": [
+                0,
+                6,
+                7,
+                6
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 101.3,
+            "description": "Fair",
+            "windSpeed": 6.9,
+            "windDirection": 274
+        },
+        "betting": {
+            "spread": -30.5,
+            "overUnder": 52.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401756851,
+        "startDate": "2025-08-31T00:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "4th & 10 at PRST 25",
+        "possession": "away",
+        "lastPlay": "CJ Jordan run for a loss of 2 yards to the PRST 25",
+        "venue": {
+            "name": "LaVell Edwards Stadium",
+            "city": "Provo",
+            "state": "UT"
+        },
+        "homeTeam": {
+            "id": 252,
+            "name": "BYU Cougars",
+            "conference": "Big 12",
+            "classification": "fbs",
+            "points": 69,
+            "lineScores": [
+                14,
+                35,
+                6,
+                14
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2502,
+            "name": "Portland State Vikings",
+            "conference": "Big Sky",
+            "classification": "fcs",
+            "points": 0,
+            "lineScores": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 77.5,
+            "description": null,
+            "windSpeed": 7.1,
+            "windDirection": 324
+        },
+        "betting": {
+            "spread": -43.5,
+            "overUnder": 61.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401756852,
+        "startDate": "2025-08-29T00:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "3rd & 4 at HOU 40",
+        "possession": "home",
+        "lastPlay": "DJ Butler run for 15 yds to the HOU 40 for a 1ST down",
+        "venue": {
+            "name": "TDECU Stadium",
+            "city": "Houston",
+            "state": "TX"
+        },
+        "homeTeam": {
+            "id": 248,
+            "name": "Houston Cougars",
+            "conference": "Big 12",
+            "classification": "fbs",
+            "points": 27,
+            "lineScores": [
+                7,
+                10,
+                7,
+                3
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2617,
+            "name": "Stephen F. Austin Lumberjacks",
+            "conference": "Southland",
+            "classification": "fcs",
+            "points": 0,
+            "lineScores": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 85.3,
+            "description": "Fair",
+            "windSpeed": 5.3,
+            "windDirection": 145
+        },
+        "betting": {
+            "spread": -24.5,
+            "overUnder": 54.5,
+            "homeMoneyline": -2200,
+            "awayMoneyline": 1000
+        }
+    },
+    {
+        "id": 401756853,
+        "startDate": "2025-08-30T19:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": "FOX",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": null,
+        "possession": null,
+        "lastPlay": null,
+        "venue": {
+            "name": "Jack Trice Stadium",
+            "city": "Ames",
+            "state": "IA"
+        },
+        "homeTeam": {
+            "id": 66,
+            "name": "Iowa State Cyclones",
+            "conference": "Big 12",
+            "classification": "fbs",
+            "points": 55,
+            "lineScores": [
+                14,
+                13,
+                14,
+                14
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 233,
+            "name": "South Dakota Coyotes",
+            "conference": "MVFC",
+            "classification": "fcs",
+            "points": 7,
+            "lineScores": [
+                7,
+                0,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 72.7,
+            "description": null,
+            "windSpeed": 5.2,
+            "windDirection": 123
+        },
+        "betting": {
+            "spread": -16.5,
+            "overUnder": 47.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401756854,
+        "startDate": "2025-08-29T23:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "1st & 10 at WAG 44",
+        "possession": "home",
+        "lastPlay": "John Kelly run for 8 yds to the WAG 44 for a 1ST down",
+        "venue": {
+            "name": "Memorial Stadium",
+            "city": "Lawrence",
+            "state": "KS"
+        },
+        "homeTeam": {
+            "id": 2305,
+            "name": "Kansas Jayhawks",
+            "conference": "Big 12",
+            "classification": "fbs",
+            "points": 46,
+            "lineScores": [
+                14,
+                15,
+                10,
+                7
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2681,
+            "name": "Wagner Seahawks",
+            "conference": "NEC",
+            "classification": "fcs",
+            "points": 7,
+            "lineScores": [
+                0,
+                7,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 83.1,
+            "description": null,
+            "windSpeed": 4.5,
+            "windDirection": 52
+        },
+        "betting": {
+            "spread": -46.5,
+            "overUnder": 57.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401756855,
+        "startDate": "2025-08-30T23:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "1st & 10 at UND 47",
+        "possession": "away",
+        "lastPlay": "Jerry Kaminski pass incomplete to Caden Dennis",
+        "venue": {
+            "name": "Bill Snyder Family Stadium",
+            "city": "Manhattan",
+            "state": "KS"
+        },
+        "homeTeam": {
+            "id": 2306,
+            "name": "Kansas State Wildcats",
+            "conference": "Big 12",
+            "classification": "fbs",
+            "points": 38,
+            "lineScores": [
+                10,
+                7,
+                14,
+                7
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 155,
+            "name": "North Dakota Fighting Hawks",
+            "conference": "MVFC",
+            "classification": "fcs",
+            "points": 35,
+            "lineScores": [
+                7,
+                14,
+                0,
+                14
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 80.6,
+            "description": null,
+            "windSpeed": 7.8,
+            "windDirection": 181
+        },
+        "betting": {
+            "spread": -27.5,
+            "overUnder": 55.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401756876,
+        "startDate": "2025-08-28T23:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "4th & 6 at OKST 34",
+        "possession": "home",
+        "lastPlay": "Chase Barry punt for 52 yds",
+        "venue": {
+            "name": "Boone Pickens Stadium",
+            "city": "Stillwater",
+            "state": "OK"
+        },
+        "homeTeam": {
+            "id": 197,
+            "name": "Oklahoma State Cowboys",
+            "conference": "Big 12",
+            "classification": "fbs",
+            "points": 27,
+            "lineScores": [
+                14,
+                3,
+                3,
+                7
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2630,
+            "name": "UT Martin Skyhawks",
+            "conference": "Big South-OVC",
+            "classification": "fcs",
+            "points": 7,
+            "lineScores": [
+                7,
+                0,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 79.5,
+            "description": null,
+            "windSpeed": 4,
+            "windDirection": 288
+        },
+        "betting": {
+            "spread": -26,
+            "overUnder": 56.5,
+            "homeMoneyline": -1300,
+            "awayMoneyline": 725
+        }
+    },
+    {
+        "id": 401756877,
+        "startDate": "2025-08-30T23:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": null,
+        "possession": null,
+        "lastPlay": null,
+        "venue": {
+            "name": "Jones AT&T Stadium",
+            "city": "Lubbock",
+            "state": "TX"
+        },
+        "homeTeam": {
+            "id": 2641,
+            "name": "Texas Tech Red Raiders",
+            "conference": "Big 12",
+            "classification": "fbs",
+            "points": 67,
+            "lineScores": [
+                23,
+                24,
+                14,
+                6
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2029,
+            "name": "Arkansas-Pine Bluff Golden Lions",
+            "conference": "SWAC",
+            "classification": "fcs",
+            "points": 7,
+            "lineScores": [
+                0,
+                0,
+                0,
+                7
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 78.4,
+            "description": "Rain",
+            "windSpeed": 10.4,
+            "windDirection": 92
+        },
+        "betting": {
+            "spread": -54.5,
+            "overUnder": 63.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401756878,
+        "startDate": "2025-08-30T18:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "2nd & 1 at WVU 34",
+        "possession": "home",
+        "lastPlay": "Khalil Wilkins run for 9 yds to the WVU 34",
+        "venue": {
+            "name": "Milan Puskar Stadium",
+            "city": "Morgantown",
+            "state": "WV"
+        },
+        "homeTeam": {
+            "id": 277,
+            "name": "West Virginia Mountaineers",
+            "conference": "Big 12",
+            "classification": "fbs",
+            "points": 45,
+            "lineScores": [
+                7,
+                3,
+                14,
+                21
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2523,
+            "name": "Robert Morris Colonials",
+            "conference": "NEC",
+            "classification": "fcs",
+            "points": 3,
+            "lineScores": [
+                0,
+                3,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 68.7,
+            "description": null,
+            "windSpeed": 7,
+            "windDirection": 350
+        },
+        "betting": {
+            "spread": -40,
+            "overUnder": 56.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401757167,
+        "startDate": "2025-08-30T18:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": null,
+        "possession": null,
+        "lastPlay": null,
+        "venue": {
+            "name": "Pratt & Whitney Stadium",
+            "city": "East Hartford",
+            "state": "CT"
+        },
+        "homeTeam": {
+            "id": 41,
+            "name": "UConn Huskies",
+            "conference": "FBS Independents",
+            "classification": "fbs",
+            "points": 59,
+            "lineScores": [
+                14,
+                21,
+                10,
+                14
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2115,
+            "name": "Central Connecticut Blue Devils",
+            "conference": "NEC",
+            "classification": "fcs",
+            "points": 13,
+            "lineScores": [
+                7,
+                3,
+                3,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 70.2,
+            "description": null,
+            "windSpeed": 4.7,
+            "windDirection": 273
+        },
+        "betting": {
+            "spread": -28,
+            "overUnder": 51.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401757218,
+        "startDate": "2025-08-23T23:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "CBSSN",
+        "neutralSite": false,
+        "conferenceGame": true,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "2nd & 8 at WKU 6",
+        "possession": "home",
+        "lastPlay": "La'Vell Wright run for 2 yds to the WKU 6",
+        "venue": {
+            "name": "Houchens Industries-L.T. Smith Stadium",
+            "city": "Bowling Green",
+            "state": "KY"
+        },
+        "homeTeam": {
+            "id": 98,
+            "name": "Western Kentucky Hilltoppers",
+            "conference": "Conference USA",
+            "classification": "fbs",
+            "points": 41,
+            "lineScores": [
+                7,
+                13,
+                14,
+                7
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2534,
+            "name": "Sam Houston Bearkats",
+            "conference": "Conference USA",
+            "classification": "fbs",
+            "points": 24,
+            "lineScores": [
+                3,
+                7,
+                14,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 84.4,
+            "description": "Clear",
+            "windSpeed": 6.9,
+            "windDirection": 340
+        },
+        "betting": {
+            "spread": -9.5,
+            "overUnder": 60,
+            "homeMoneyline": -390,
+            "awayMoneyline": 295
+        }
+    },
+    {
+        "id": 401757219,
+        "startDate": "2025-08-28T23:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": null,
+        "possession": null,
+        "lastPlay": null,
+        "venue": {
+            "name": "Delaware Stadium",
+            "city": "Newark",
+            "state": "DE"
+        },
+        "homeTeam": {
+            "id": 48,
+            "name": "Delaware Blue Hens",
+            "conference": "Conference USA",
+            "classification": "fbs",
+            "points": 35,
+            "lineScores": [
+                0,
+                14,
+                7,
+                14
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2169,
+            "name": "Delaware State Hornets",
+            "conference": "MEAC",
+            "classification": "fcs",
+            "points": 17,
+            "lineScores": [
+                0,
+                3,
+                7,
+                7
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 75,
+            "description": "Cloudy",
+            "windSpeed": 6.5,
+            "windDirection": 200
+        },
+        "betting": {
+            "spread": -30.5,
+            "overUnder": 55.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401757220,
+        "startDate": "2025-08-30T20:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "4th & 5 at ME 48",
+        "possession": "away",
+        "lastPlay": "Carter Peevy pass complete to Sincere Baines for no gain to the ME 48",
+        "venue": {
+            "name": "Williams Stadium (VA)",
+            "city": "Lynchburg",
+            "state": "VA"
+        },
+        "homeTeam": {
+            "id": 2335,
+            "name": "Liberty Flames",
+            "conference": "Conference USA",
+            "classification": "fbs",
+            "points": 28,
+            "lineScores": [
+                0,
+                7,
+                0,
+                21
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 311,
+            "name": "Maine Black Bears",
+            "conference": "CAA",
+            "classification": "fcs",
+            "points": 7,
+            "lineScores": [
+                0,
+                7,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 78.4,
+            "description": "Fair",
+            "windSpeed": 5.6,
+            "windDirection": 70
+        },
+        "betting": {
+            "spread": -25.5,
+            "overUnder": 51,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401757221,
+        "startDate": "2025-08-30T23:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": null,
+        "possession": null,
+        "lastPlay": null,
+        "venue": {
+            "name": "Joe Aillet Stadium",
+            "city": "Ruston",
+            "state": "LA"
+        },
+        "homeTeam": {
+            "id": 2348,
+            "name": "Louisiana Tech Bulldogs",
+            "conference": "Conference USA",
+            "classification": "fbs",
+            "points": 24,
+            "lineScores": [
+                0,
+                3,
+                21,
+                0
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2545,
+            "name": "SE Louisiana Lions",
+            "conference": "Southland",
+            "classification": "fcs",
+            "points": 0,
+            "lineScores": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 83.7,
+            "description": "Clear",
+            "windSpeed": 8.1,
+            "windDirection": 51
+        },
+        "betting": {
+            "spread": -14.5,
+            "overUnder": 51,
+            "homeMoneyline": -700,
+            "awayMoneyline": 475
+        }
+    },
+    {
+        "id": 401757222,
+        "startDate": "2025-08-30T23:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": null,
+        "possession": null,
+        "lastPlay": null,
+        "venue": {
+            "name": "Johnny \"Red\" Floyd Stadium",
+            "city": "Murfreesboro",
+            "state": "TN"
+        },
+        "homeTeam": {
+            "id": 2393,
+            "name": "Middle Tennessee Blue Raiders",
+            "conference": "Conference USA",
+            "classification": "fbs",
+            "points": 14,
+            "lineScores": [
+                0,
+                7,
+                7,
+                0
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2046,
+            "name": "Austin Peay Governors",
+            "conference": "UAC",
+            "classification": "fcs",
+            "points": 34,
+            "lineScores": [
+                14,
+                7,
+                3,
+                10
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 78.8,
+            "description": null,
+            "windSpeed": 8.5,
+            "windDirection": 26
+        },
+        "betting": {
+            "spread": -14.5,
+            "overUnder": 53.5,
+            "homeMoneyline": -675,
+            "awayMoneyline": 460
+        }
+    },
+    {
+        "id": 401757223,
+        "startDate": "2025-08-31T01:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": null,
+        "possession": null,
+        "lastPlay": null,
+        "venue": {
+            "name": "Aggie Memorial Stadium",
+            "city": "Las Cruces",
+            "state": "NM"
+        },
+        "homeTeam": {
+            "id": 166,
+            "name": "New Mexico State Aggies",
+            "conference": "Conference USA",
+            "classification": "fbs",
+            "points": 19,
+            "lineScores": [
+                6,
+                3,
+                0,
+                10
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2803,
+            "name": "Bryant Bulldogs",
+            "conference": "CAA",
+            "classification": "fcs",
+            "points": 3,
+            "lineScores": [
+                3,
+                0,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 81.1,
+            "description": null,
+            "windSpeed": 6.3,
+            "windDirection": 268
+        },
+        "betting": {
+            "spread": -19.5,
+            "overUnder": 53.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401757224,
+        "startDate": "2025-08-30T01:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": "CBSSN",
+        "neutralSite": true,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "2nd & 7 at SHSU 45",
+        "possession": "away",
+        "lastPlay": "Darrien Jones run for 6 yds to the SHSU 45",
+        "venue": {
+            "name": "BBVA Compass Stadium",
+            "city": "Houston",
+            "state": "TX"
+        },
+        "homeTeam": {
+            "id": 2534,
+            "name": "Sam Houston Bearkats",
+            "conference": "Conference USA",
+            "classification": "fbs",
+            "points": 21,
+            "lineScores": [
+                7,
+                0,
+                0,
+                14
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2439,
+            "name": "UNLV Rebels",
+            "conference": "Mountain West",
+            "classification": "fbs",
+            "points": 38,
+            "lineScores": [
+                14,
+                10,
+                7,
+                7
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 84,
+            "description": "Cloudy",
+            "windSpeed": 8.1,
+            "windDirection": 181
+        },
+        "betting": {
+            "spread": 9,
+            "overUnder": 60.5,
+            "homeMoneyline": 370,
+            "awayMoneyline": -510
+        }
+    },
+    {
+        "id": 401757225,
+        "startDate": "2025-08-30T23:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": "CBSSN",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "3rd & 14 at USU 45",
+        "possession": "home",
+        "lastPlay": "run for a loss of 1 yard to the USU 45",
+        "venue": {
+            "name": "Maverik Stadium",
+            "city": "Logan",
+            "state": "UT"
+        },
+        "homeTeam": {
+            "id": 328,
+            "name": "Utah State Aggies",
+            "conference": "Mountain West",
+            "classification": "fbs",
+            "points": 28,
+            "lineScores": [
+                10,
+                10,
+                8,
+                0
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2638,
+            "name": "UTEP Miners",
+            "conference": "Conference USA",
+            "classification": "fbs",
+            "points": 16,
+            "lineScores": [
+                7,
+                3,
+                0,
+                6
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 73,
+            "description": null,
+            "windSpeed": 2.7,
+            "windDirection": 318
+        },
+        "betting": {
+            "spread": -5.5,
+            "overUnder": 58.5,
+            "homeMoneyline": -165,
+            "awayMoneyline": 140
+        }
+    },
+    {
+        "id": 401757226,
+        "startDate": "2025-08-30T23:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "1st & 10 at UNA 15",
+        "possession": "home",
+        "lastPlay": "Western Kentucky Penalty, (Yards) to the UNA 15",
+        "venue": {
+            "name": "Houchens Industries-L.T. Smith Stadium",
+            "city": "Bowling Green",
+            "state": "KY"
+        },
+        "homeTeam": {
+            "id": 98,
+            "name": "Western Kentucky Hilltoppers",
+            "conference": "Conference USA",
+            "classification": "fbs",
+            "points": 55,
+            "lineScores": [
+                14,
+                28,
+                3,
+                10
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2453,
+            "name": "North Alabama Lions",
+            "conference": "UAC",
+            "classification": "fcs",
+            "points": 6,
+            "lineScores": [
+                6,
+                0,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 75.6,
+            "description": null,
+            "windSpeed": 9.2,
+            "windDirection": 55
+        },
+        "betting": {
+            "spread": -27.5,
+            "overUnder": 60.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401760357,
+        "startDate": "2025-08-29T02:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": null,
+        "possession": null,
+        "lastPlay": null,
+        "venue": {
+            "name": "Snapdragon Stadium",
+            "city": "San Diego",
+            "state": "CA"
+        },
+        "homeTeam": {
+            "id": 21,
+            "name": "San Diego State Aztecs",
+            "conference": "Mountain West",
+            "classification": "fbs",
+            "points": 42,
+            "lineScores": [
+                14,
+                6,
+                8,
+                14
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2619,
+            "name": "Stony Brook Seawolves",
+            "conference": "CAA",
+            "classification": "fcs",
+            "points": 0,
+            "lineScores": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 76.5,
+            "description": "Cloudy",
+            "windSpeed": 6.9,
+            "windDirection": 317
+        },
+        "betting": {
+            "spread": -19.5,
+            "overUnder": 53.5,
+            "homeMoneyline": -1000,
+            "awayMoneyline": 625
+        }
+    },
+    {
+        "id": 401760358,
+        "startDate": "2025-08-30T02:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": "FS1",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "3rd & 4 at CMU 38",
+        "possession": "home",
+        "lastPlay": "Walker Eget pass complete to Danny Scudero for 6 yds to the CMU 38",
+        "venue": {
+            "name": "CEFCU Stadium",
+            "city": "San Jose",
+            "state": "CA"
+        },
+        "homeTeam": {
+            "id": 23,
+            "name": "San José State Spartans",
+            "conference": "Mountain West",
+            "classification": "fbs",
+            "points": 14,
+            "lineScores": [
+                0,
+                7,
+                7,
+                0
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2117,
+            "name": "Central Michigan Chippewas",
+            "conference": "Mid-American",
+            "classification": "fbs",
+            "points": 16,
+            "lineScores": [
+                10,
+                3,
+                0,
+                3
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 83.5,
+            "description": null,
+            "windSpeed": 8.1,
+            "windDirection": 338
+        },
+        "betting": {
+            "spread": -14.5,
+            "overUnder": 51.5,
+            "homeMoneyline": -460,
+            "awayMoneyline": 340
+        }
+    },
+    {
+        "id": 401760359,
+        "startDate": "2025-08-30T19:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": "CBSSN",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": null,
+        "possession": null,
+        "lastPlay": null,
+        "venue": {
+            "name": "Falcon Stadium",
+            "city": "Colorado Springs",
+            "state": "CO"
+        },
+        "homeTeam": {
+            "id": 2005,
+            "name": "Air Force Falcons",
+            "conference": "Mountain West",
+            "classification": "fbs",
+            "points": 49,
+            "lineScores": [
+                14,
+                14,
+                14,
+                7
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2083,
+            "name": "Bucknell Bison",
+            "conference": "Patriot",
+            "classification": "fcs",
+            "points": 13,
+            "lineScores": [
+                0,
+                7,
+                3,
+                3
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 63.9,
+            "description": "Rain",
+            "windSpeed": 12.3,
+            "windDirection": 333
+        },
+        "betting": {
+            "spread": -31,
+            "overUnder": 54.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401760361,
+        "startDate": "2025-08-31T01:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": "FS1",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": null,
+        "possession": null,
+        "lastPlay": null,
+        "venue": {
+            "name": "Valley Children's Stadium",
+            "city": "Fresno",
+            "state": "CA"
+        },
+        "homeTeam": {
+            "id": 278,
+            "name": "Fresno State Bulldogs",
+            "conference": "Mountain West",
+            "classification": "fbs",
+            "points": 42,
+            "lineScores": [
+                10,
+                3,
+                15,
+                14
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 290,
+            "name": "Georgia Southern Eagles",
+            "conference": "Sun Belt",
+            "classification": "fbs",
+            "points": 14,
+            "lineScores": [
+                7,
+                7,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 94.1,
+            "description": "Fair",
+            "windSpeed": 9.2,
+            "windDirection": 306
+        },
+        "betting": {
+            "spread": -2,
+            "overUnder": 49.5,
+            "homeMoneyline": -130,
+            "awayMoneyline": 110
+        }
+    },
+    {
+        "id": 401760371,
+        "startDate": "2025-08-23T20:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "3rd & 16 at IDST 38",
+        "possession": "home",
+        "lastPlay": "run for a loss of 1 yard to the IDST 38",
+        "venue": {
+            "name": "Allegiant Stadium",
+            "city": "Las Vegas",
+            "state": "NV"
+        },
+        "homeTeam": {
+            "id": 2439,
+            "name": "UNLV Rebels",
+            "conference": "Mountain West",
+            "classification": "fbs",
+            "points": 38,
+            "lineScores": [
+                0,
+                14,
+                10,
+                14
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 304,
+            "name": "Idaho State Bengals",
+            "conference": "Big Sky",
+            "classification": "fcs",
+            "points": 31,
+            "lineScores": [
+                10,
+                7,
+                7,
+                7
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": null,
+            "description": null,
+            "windSpeed": null,
+            "windDirection": null
+        },
+        "betting": {
+            "spread": -30.5,
+            "overUnder": 67,
+            "homeMoneyline": -3500,
+            "awayMoneyline": 1100
+        }
+    },
+    {
+        "id": 401761588,
+        "startDate": "2025-08-28T23:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "1st & 10 at SFPA 23",
+        "possession": "home",
+        "lastPlay": "run for 10 yds to the SFPA 23 for a 1ST down",
+        "venue": {
+            "name": "Malone Stadium",
+            "city": "Monroe",
+            "state": "LA"
+        },
+        "homeTeam": {
+            "id": 2433,
+            "name": "UL Monroe Warhawks",
+            "conference": "Sun Belt",
+            "classification": "fbs",
+            "points": 29,
+            "lineScores": [
+                7,
+                3,
+                7,
+                12
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2598,
+            "name": "Saint Francis Red Flash",
+            "conference": "NEC",
+            "classification": "fcs",
+            "points": 0,
+            "lineScores": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 92.5,
+            "description": null,
+            "windSpeed": 4.2,
+            "windDirection": 197
+        },
+        "betting": {
+            "spread": -31,
+            "overUnder": 47,
+            "homeMoneyline": -3500,
+            "awayMoneyline": 1100
+        }
+    },
+    {
+        "id": 401761589,
+        "startDate": "2025-08-29T23:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "ESPNU",
+        "neutralSite": true,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "4th & 7 at CLT 47",
+        "possession": "away",
+        "lastPlay": "JJ Kohl pass complete to Jackson Grier for 19 yds to the CLT 47 for a 1ST down",
+        "venue": {
+            "name": "Bank of America Stadium",
+            "city": "Charlotte",
+            "state": "NC"
+        },
+        "homeTeam": {
+            "id": 2429,
+            "name": "Charlotte 49ers",
+            "conference": "American Athletic",
+            "classification": "fbs",
+            "points": 11,
+            "lineScores": [
+                3,
+                0,
+                0,
+                8
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2026,
+            "name": "App State Mountaineers",
+            "conference": "Sun Belt",
+            "classification": "fbs",
+            "points": 34,
+            "lineScores": [
+                0,
+                17,
+                10,
+                7
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 76.6,
+            "description": "Fair",
+            "windSpeed": 3.4,
+            "windDirection": 230
+        },
+        "betting": {
+            "spread": 3,
+            "overUnder": 49,
+            "homeMoneyline": 250,
+            "awayMoneyline": -300
+        }
+    },
+    {
+        "id": 401761590,
+        "startDate": "2025-08-30T22:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "2nd & 7 at JMU 46",
+        "possession": "home",
+        "lastPlay": "Jobi Malary run for 3 yds to the JMU 46",
+        "venue": {
+            "name": "Bridgeforth Stadium",
+            "city": "Harrisonburg",
+            "state": "VA"
+        },
+        "homeTeam": {
+            "id": 256,
+            "name": "James Madison Dukes",
+            "conference": "Sun Belt",
+            "classification": "fbs",
+            "points": 45,
+            "lineScores": [
+                14,
+                14,
+                3,
+                14
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2692,
+            "name": "Weber State Wildcats",
+            "conference": "Big Sky",
+            "classification": "fcs",
+            "points": 10,
+            "lineScores": [
+                0,
+                7,
+                3,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 72.1,
+            "description": "Fair",
+            "windSpeed": 7.4,
+            "windDirection": 33
+        },
+        "betting": {
+            "spread": -26.5,
+            "overUnder": 54.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401761591,
+        "startDate": "2025-08-30T23:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "SEMO - Passing Touchdown",
+        "possession": "away",
+        "lastPlay": "Kameron Thomas run for a loss of 2 yards to the ARST 30 Kameron Thomas fumbled, recovered by ARST",
+        "venue": {
+            "name": "Centennial Bank Stadium",
+            "city": "Jonesboro",
+            "state": "AR"
+        },
+        "homeTeam": {
+            "id": 2032,
+            "name": "Arkansas State Red Wolves",
+            "conference": "Sun Belt",
+            "classification": "fbs",
+            "points": 42,
+            "lineScores": [
+                7,
+                21,
+                7,
+                7
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2546,
+            "name": "Southeast Missouri State Redhawks",
+            "conference": "Big South-OVC",
+            "classification": "fcs",
+            "points": 24,
+            "lineScores": [
+                7,
+                3,
+                0,
+                14
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 73.8,
+            "description": null,
+            "windSpeed": 8.9,
+            "windDirection": 39
+        },
+        "betting": {
+            "spread": null,
+            "overUnder": null,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401761592,
+        "startDate": "2025-08-31T00:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": null,
+        "possession": null,
+        "lastPlay": null,
+        "venue": {
+            "name": "Cajun Field",
+            "city": "Lafayette",
+            "state": "LA"
+        },
+        "homeTeam": {
+            "id": 309,
+            "name": "Louisiana Ragin' Cajuns",
+            "conference": "Sun Belt",
+            "classification": "fbs",
+            "points": 12,
+            "lineScores": [
+                3,
+                3,
+                6,
+                0
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 242,
+            "name": "Rice Owls",
+            "conference": "American Athletic",
+            "classification": "fbs",
+            "points": 14,
+            "lineScores": [
+                0,
+                14,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 86.2,
+            "description": null,
+            "windSpeed": 3.1,
+            "windDirection": 88
+        },
+        "betting": {
+            "spread": -9.5,
+            "overUnder": 48,
+            "homeMoneyline": -600,
+            "awayMoneyline": 425
+        }
+    },
+    {
+        "id": 401761593,
+        "startDate": "2025-08-30T23:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "3rd & 3 at USA 30",
+        "possession": "home",
+        "lastPlay": "Trae'von Dunbar run for 4 yds to the USA 30",
+        "venue": {
+            "name": "Hancock Whitney Stadium",
+            "city": "Mobile",
+            "state": "AL"
+        },
+        "homeTeam": {
+            "id": 6,
+            "name": "South Alabama Jaguars",
+            "conference": "Sun Belt",
+            "classification": "fbs",
+            "points": 38,
+            "lineScores": [
+                7,
+                10,
+                7,
+                14
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2415,
+            "name": "Morgan State Bears",
+            "conference": "MEAC",
+            "classification": "fcs",
+            "points": 21,
+            "lineScores": [
+                7,
+                0,
+                7,
+                7
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 81.1,
+            "description": "Fair",
+            "windSpeed": 5.8,
+            "windDirection": 353
+        },
+        "betting": {
+            "spread": -28.5,
+            "overUnder": 51.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401761594,
+        "startDate": "2025-08-31T00:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "EMU - Rushing Touchdown",
+        "possession": "away",
+        "lastPlay": "(R. Kessinger KICK)",
+        "venue": {
+            "name": "Bobcat Stadium (TX)",
+            "city": "San Marcos",
+            "state": "TX"
+        },
+        "homeTeam": {
+            "id": 326,
+            "name": "Texas State Bobcats",
+            "conference": "Sun Belt",
+            "classification": "fbs",
+            "points": 52,
+            "lineScores": [
+                14,
+                10,
+                14,
+                14
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2199,
+            "name": "Eastern Michigan Eagles",
+            "conference": "Mid-American",
+            "classification": "fbs",
+            "points": 27,
+            "lineScores": [
+                3,
+                14,
+                0,
+                10
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 87.8,
+            "description": null,
+            "windSpeed": 10.5,
+            "windDirection": 44
+        },
+        "betting": {
+            "spread": -14,
+            "overUnder": 56,
+            "homeMoneyline": -525,
+            "awayMoneyline": 375
+        }
+    },
+    {
+        "id": 401761595,
+        "startDate": "2025-08-30T23:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "1st & 10 at NICH 47",
+        "possession": "away",
+        "lastPlay": "Deuce Hogan pass complete to Miequle Brock Jr. for 3 yds to the NICH 47",
+        "venue": {
+            "name": "Veterans Memorial Stadium (AL)",
+            "city": "Troy",
+            "state": "AL"
+        },
+        "homeTeam": {
+            "id": 2653,
+            "name": "Troy Trojans",
+            "conference": "Sun Belt",
+            "classification": "fbs",
+            "points": 38,
+            "lineScores": [
+                0,
+                7,
+                3,
+                28
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2447,
+            "name": "Nicholls Colonels",
+            "conference": "Southland",
+            "classification": "fcs",
+            "points": 20,
+            "lineScores": [
+                0,
+                10,
+                7,
+                3
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 79,
+            "description": null,
+            "windSpeed": 9.2,
+            "windDirection": 39
+        },
+        "betting": {
+            "spread": -19.5,
+            "overUnder": 47.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401762430,
+        "startDate": "2025-08-29T00:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": null,
+        "possession": null,
+        "lastPlay": null,
+        "venue": {
+            "name": "Protective Stadium",
+            "city": "Birmingham",
+            "state": "AL"
+        },
+        "homeTeam": {
+            "id": 5,
+            "name": "UAB Blazers",
+            "conference": "American Athletic",
+            "classification": "fbs",
+            "points": 52,
+            "lineScores": [
+                10,
+                7,
+                21,
+                14
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2011,
+            "name": "Alabama State Hornets",
+            "conference": "SWAC",
+            "classification": "fcs",
+            "points": 42,
+            "lineScores": [
+                7,
+                14,
+                7,
+                14
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 77.9,
+            "description": "Cloudy",
+            "windSpeed": 3.4,
+            "windDirection": 313
+        },
+        "betting": {
+            "spread": -21,
+            "overUnder": 53.5,
+            "homeMoneyline": -1200,
+            "awayMoneyline": 700
+        }
+    },
+    {
+        "id": 401762432,
+        "startDate": "2025-08-29T22:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "CBSSN",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "1st & 10 at TAR 26",
+        "possession": "home",
+        "lastPlay": "End of OT",
+        "venue": {
+            "name": "Michie Stadium",
+            "city": "West Point",
+            "state": "NY"
+        },
+        "homeTeam": {
+            "id": 349,
+            "name": "Army Black Knights",
+            "conference": "American Athletic",
+            "classification": "fbs",
+            "points": 27,
+            "lineScores": [
+                7,
+                10,
+                7,
+                0,
+                3,
+                0
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2627,
+            "name": "Tarleton State Texans",
+            "conference": "UAC",
+            "classification": "fcs",
+            "points": 30,
+            "lineScores": [
+                3,
+                7,
+                7,
+                7,
+                3,
+                3
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 75.6,
+            "description": null,
+            "windSpeed": 7.8,
+            "windDirection": 211
+        },
+        "betting": {
+            "spread": -14,
+            "overUnder": 47.5,
+            "homeMoneyline": -750,
+            "awayMoneyline": 500
+        }
+    },
+    {
+        "id": 401762433,
+        "startDate": "2025-08-30T20:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": null,
+        "possession": null,
+        "lastPlay": null,
+        "venue": {
+            "name": "Simmons Bank Liberty Stadium",
+            "city": "Memphis",
+            "state": "TN"
+        },
+        "homeTeam": {
+            "id": 235,
+            "name": "Memphis Tigers",
+            "conference": "American Athletic",
+            "classification": "fbs",
+            "points": 45,
+            "lineScores": [
+                14,
+                14,
+                10,
+                7
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 236,
+            "name": "Chattanooga Mocs",
+            "conference": "Southern",
+            "classification": "fcs",
+            "points": 10,
+            "lineScores": [
+                0,
+                3,
+                0,
+                7
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 84.4,
+            "description": "Fair",
+            "windSpeed": 11.5,
+            "windDirection": 28
+        },
+        "betting": {
+            "spread": -30.5,
+            "overUnder": 55.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401762434,
+        "startDate": "2025-08-30T16:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "CBSSN",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "3rd & 14 at NAVY 20",
+        "possession": "home",
+        "lastPlay": "(00:29) Kneel down by Navy at Navy20 for loss of 2 yards.",
+        "venue": {
+            "name": "Navy-Marine Corps Memorial Stadium",
+            "city": "Annapolis",
+            "state": "MD"
+        },
+        "homeTeam": {
+            "id": 2426,
+            "name": "Navy Midshipmen",
+            "conference": "American Athletic",
+            "classification": "fbs",
+            "points": 52,
+            "lineScores": [
+                7,
+                21,
+                10,
+                14
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2678,
+            "name": "VMI Keydets",
+            "conference": "Southern",
+            "classification": "fcs",
+            "points": 7,
+            "lineScores": [
+                0,
+                0,
+                7,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 71.4,
+            "description": "Fair",
+            "windSpeed": 6.9,
+            "windDirection": 355
+        },
+        "betting": {
+            "spread": -42,
+            "overUnder": 53,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401762435,
+        "startDate": "2025-08-31T00:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "2nd & 13 at UNT 40",
+        "possession": "home",
+        "lastPlay": "R. Poffenbarger takes a knee",
+        "venue": {
+            "name": "DATCU Stadium",
+            "city": "Denton",
+            "state": "TX"
+        },
+        "homeTeam": {
+            "id": 249,
+            "name": "North Texas Mean Green",
+            "conference": "American Athletic",
+            "classification": "fbs",
+            "points": 51,
+            "lineScores": [
+                13,
+                24,
+                14,
+                0
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2320,
+            "name": "Lamar Cardinals",
+            "conference": "Southland",
+            "classification": "fcs",
+            "points": 0,
+            "lineScores": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 83.3,
+            "description": null,
+            "windSpeed": 9.6,
+            "windDirection": 94
+        },
+        "betting": {
+            "spread": -27.5,
+            "overUnder": 63.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401762456,
+        "startDate": "2025-08-30T19:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "1st & 10 at TEM 32",
+        "possession": "away",
+        "lastPlay": "Gevani McCoy run for 7 yds to the TEM 32 for a 1ST down",
+        "venue": {
+            "name": "Warren McGuirk Alumni Stadium",
+            "city": "Hadley",
+            "state": "MA"
+        },
+        "homeTeam": {
+            "id": 113,
+            "name": "Massachusetts Minutemen",
+            "conference": "Mid-American",
+            "classification": "fbs",
+            "points": 10,
+            "lineScores": [
+                10,
+                0,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 218,
+            "name": "Temple Owls",
+            "conference": "American Athletic",
+            "classification": "fbs",
+            "points": 42,
+            "lineScores": [
+                7,
+                21,
+                0,
+                14
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 73.6,
+            "description": null,
+            "windSpeed": 4.7,
+            "windDirection": 359
+        },
+        "betting": {
+            "spread": 1.5,
+            "overUnder": 48.5,
+            "homeMoneyline": 140,
+            "awayMoneyline": -165
+        }
+    },
+    {
+        "id": 401762457,
+        "startDate": "2025-08-31T00:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "3rd & 14 at ACU 42",
+        "possession": "home",
+        "lastPlay": "(01:07) Kneel down by Tulsa at ACU42 for loss of 2 yards.",
+        "venue": {
+            "name": "Chapman Stadium",
+            "city": "Tulsa",
+            "state": "OK"
+        },
+        "homeTeam": {
+            "id": 202,
+            "name": "Tulsa Golden Hurricane",
+            "conference": "American Athletic",
+            "classification": "fbs",
+            "points": 35,
+            "lineScores": [
+                7,
+                3,
+                11,
+                14
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2000,
+            "name": "Abilene Christian Wildcats",
+            "conference": "UAC",
+            "classification": "fcs",
+            "points": 7,
+            "lineScores": [
+                0,
+                0,
+                0,
+                7
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 79.2,
+            "description": null,
+            "windSpeed": 3.4,
+            "windDirection": 123
+        },
+        "betting": {
+            "spread": -5,
+            "overUnder": 59.5,
+            "homeMoneyline": -210,
+            "awayMoneyline": 175
+        }
+    },
+    {
+        "id": 401762522,
+        "startDate": "2025-08-28T21:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": "ESPN",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "1st & 10 at USF 25",
+        "possession": "away",
+        "lastPlay": "Dylan Riley run for 7 yds to the USF 25 for a 1ST down",
+        "venue": {
+            "name": "Raymond James Stadium",
+            "city": "Tampa",
+            "state": "FL"
+        },
+        "homeTeam": {
+            "id": 58,
+            "name": "South Florida Bulls",
+            "conference": "American Athletic",
+            "classification": "fbs",
+            "points": 34,
+            "lineScores": [
+                0,
+                10,
+                14,
+                10
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 68,
+            "name": "Boise State Broncos",
+            "conference": "Mountain West",
+            "classification": "fbs",
+            "points": 7,
+            "lineScores": [
+                7,
+                0,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 87.3,
+            "description": "Cloudy",
+            "windSpeed": 6.9,
+            "windDirection": 315
+        },
+        "betting": {
+            "spread": 4.5,
+            "overUnder": 62,
+            "homeMoneyline": 240,
+            "awayMoneyline": -290
+        }
+    },
+    {
+        "id": 401762789,
+        "startDate": "2025-08-28T23:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "2nd & 10 at AKR 37",
+        "possession": "home",
+        "lastPlay": "Ben Finley pass incomplete to Jean Louis III",
+        "venue": {
+            "name": "InfoCision Stadium",
+            "city": "Akron",
+            "state": "OH"
+        },
+        "homeTeam": {
+            "id": 2006,
+            "name": "Akron Zips",
+            "conference": "Mid-American",
+            "classification": "fbs",
+            "points": 0,
+            "lineScores": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2751,
+            "name": "Wyoming Cowboys",
+            "conference": "Mountain West",
+            "classification": "fbs",
+            "points": 10,
+            "lineScores": [
+                0,
+                3,
+                0,
+                7
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 72.1,
+            "description": null,
+            "windSpeed": 10.9,
+            "windDirection": 245
+        },
+        "betting": {
+            "spread": 5,
+            "overUnder": 48,
+            "homeMoneyline": 250,
+            "awayMoneyline": -300
+        }
+    },
+    {
+        "id": 401762790,
+        "startDate": "2025-08-28T22:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "1st & 10 at BGSU 30",
+        "possession": "away",
+        "lastPlay": "Christian Bush punt for 39 yds, fair catch by Brennan Ridley at the BGSU 30",
+        "venue": {
+            "name": "Doyt L. Perry Stadium",
+            "city": "Bowling Green",
+            "state": "OH"
+        },
+        "homeTeam": {
+            "id": 189,
+            "name": "Bowling Green Falcons",
+            "conference": "Mid-American",
+            "classification": "fbs",
+            "points": 26,
+            "lineScores": [
+                7,
+                10,
+                6,
+                3
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 322,
+            "name": "Lafayette Leopards",
+            "conference": "Patriot",
+            "classification": "fcs",
+            "points": 7,
+            "lineScores": [
+                0,
+                0,
+                7,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 77,
+            "description": null,
+            "windSpeed": 11.6,
+            "windDirection": 250
+        },
+        "betting": {
+            "spread": -21,
+            "overUnder": 53,
+            "homeMoneyline": -1300,
+            "awayMoneyline": 725
+        }
+    },
+    {
+        "id": 401762791,
+        "startDate": "2025-08-29T01:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": "BTN",
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "1st & 10 at M-OH 41",
+        "possession": "home",
+        "lastPlay": "Dilin Jones run for 7 yds to the M-OH 41 for a 1ST down",
+        "venue": {
+            "name": "Camp Randall Stadium",
+            "city": "Madison",
+            "state": "WI"
+        },
+        "homeTeam": {
+            "id": 275,
+            "name": "Wisconsin Badgers",
+            "conference": "Big Ten",
+            "classification": "fbs",
+            "points": 17,
+            "lineScores": [
+                3,
+                0,
+                7,
+                7
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 193,
+            "name": "Miami (OH) RedHawks",
+            "conference": "Mid-American",
+            "classification": "fbs",
+            "points": 0,
+            "lineScores": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 64.6,
+            "description": null,
+            "windSpeed": 8.5,
+            "windDirection": 45
+        },
+        "betting": {
+            "spread": -18,
+            "overUnder": 41,
+            "homeMoneyline": -1200,
+            "awayMoneyline": 700
+        }
+    },
+    {
+        "id": 401762792,
+        "startDate": "2025-08-30T16:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": null,
+        "possession": null,
+        "lastPlay": null,
+        "venue": {
+            "name": "Dix Stadium",
+            "city": "Kent",
+            "state": "OH"
+        },
+        "homeTeam": {
+            "id": 2309,
+            "name": "Kent State Golden Flashes",
+            "conference": "Mid-American",
+            "classification": "fbs",
+            "points": 21,
+            "lineScores": [
+                0,
+                7,
+                7,
+                7
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2771,
+            "name": "Merrimack Warriors",
+            "conference": "FCS Independents",
+            "classification": "fcs",
+            "points": 17,
+            "lineScores": [
+                0,
+                3,
+                3,
+                11
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 68.4,
+            "description": null,
+            "windSpeed": 10.9,
+            "windDirection": 350
+        },
+        "betting": {
+            "spread": -5.5,
+            "overUnder": 50.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401762793,
+        "startDate": "2025-08-30T19:30:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": "4th & 14 at HC 38",
+        "possession": "home",
+        "lastPlay": "J. Holst takes a knee",
+        "venue": {
+            "name": "Huskie Stadium",
+            "city": "DeKalb",
+            "state": "IL"
+        },
+        "homeTeam": {
+            "id": 2459,
+            "name": "Northern Illinois Huskies",
+            "conference": "Mid-American",
+            "classification": "fbs",
+            "points": 19,
+            "lineScores": [
+                3,
+                3,
+                0,
+                13
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 107,
+            "name": "Holy Cross Crusaders",
+            "conference": "Patriot",
+            "classification": "fcs",
+            "points": 17,
+            "lineScores": [
+                0,
+                3,
+                0,
+                14
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": 70.3,
+            "description": null,
+            "windSpeed": 2.7,
+            "windDirection": 24
+        },
+        "betting": {
+            "spread": -13.5,
+            "overUnder": 48.5,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    },
+    {
+        "id": 401766898,
+        "startDate": "2025-08-29T23:00:00.000Z",
+        "startTimeTBD": false,
+        "tv": null,
+        "neutralSite": false,
+        "conferenceGame": false,
+        "status": "completed",
+        "period": null,
+        "clock": null,
+        "situation": null,
+        "possession": null,
+        "lastPlay": null,
+        "venue": {
+            "name": "Pitbull Stadium",
+            "city": "Miami",
+            "state": "FL"
+        },
+        "homeTeam": {
+            "id": 2229,
+            "name": "Florida International Panthers",
+            "conference": "Conference USA",
+            "classification": "fbs",
+            "points": 42,
+            "lineScores": [
+                7,
+                21,
+                7,
+                7
+            ],
+            "winProbability": null
+        },
+        "awayTeam": {
+            "id": 2065,
+            "name": "Bethune-Cookman Wildcats",
+            "conference": "SWAC",
+            "classification": "fcs",
+            "points": 9,
+            "lineScores": [
+                3,
+                3,
+                0,
+                3
+            ],
+            "winProbability": null
+        },
+        "weather": {
+            "temperature": null,
+            "description": null,
+            "windSpeed": null,
+            "windDirection": null
+        },
+        "betting": {
+            "spread": null,
+            "overUnder": null,
+            "homeMoneyline": null,
+            "awayMoneyline": null
+        }
+    }
+]
