@@ -15,6 +15,9 @@ const PickForm = ({ games, setGames, year, setYear, week, setWeek }) => {
     const allGamesLocked = games.length > 0 && games.every(game => new Date() > new Date(game.gameTime));
 
     useEffect(() => {
+        // Always update year and week in local storage on load
+        if (year) storageUtils.set(StorageKeys.YEAR, year);
+        if (week) storageUtils.set(StorageKeys.WEEK, week);
         const initial = {};
         games.forEach(game => {
             if (game.userPick) {
@@ -22,7 +25,7 @@ const PickForm = ({ games, setGames, year, setYear, week, setWeek }) => {
             }
         });
         setCurrentPicks(initial);
-    }, [games]);
+    }, [games, year, week]);
 
     // ***********************************************************************
     // Normalize games data to ensure consistent structure
@@ -201,6 +204,9 @@ const PickForm = ({ games, setGames, year, setYear, week, setWeek }) => {
                 // ✅ Update year/week
                 setYear(response.year || null);
                 setWeek(response.week || null);
+                // Always update year and week in local storage after submit
+                if (response.year) storageUtils.set(StorageKeys.YEAR, response.year);
+                if (response.week) storageUtils.set(StorageKeys.WEEK, response.week);
 
                 // ✅ Clear cached games
                 storageUtils.remove(StorageKeys.GAMES);
